@@ -126,7 +126,7 @@
         }
 
         .cs-picture {
-            border-radius: calc(8 / 16 * 1em);
+            border-radius: calc(16 / 16 * 1em);
             overflow: hidden;
             position: absolute;
 
@@ -165,6 +165,7 @@
             width: calc(310 / 16 * 1em);
             height: calc(343 / 16 * 1em);
             box-shadow: 0px 24px 52px 0px rgba(0, 0, 0, 0.38);
+            border: 3px solid rgb(230, 229, 229);
             top: calc(294 / 16 * 1em);
             right: 0;
             z-index: 10;
@@ -210,8 +211,8 @@
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #sbs-1285 {
-        padding-top: 10rem;
-        padding-bottom: 10rem;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
 
         .cs-container {
             max-width: calc(1280 / 16 * 1rem);
