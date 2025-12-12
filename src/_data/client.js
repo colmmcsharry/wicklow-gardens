@@ -1,15 +1,15 @@
 module.exports = {
-    name: "Code Stitch Web Designs",
+    name: "Monkstown Paving and Lanscaping",
     email: "help@codestitch.app",
     phoneForTel: "555-779-4407",
     phoneFormatted: "(555) 779-4407",
     address: {
         lineOne: "First Address Line",
         lineTwo: "Second Address Line",
-        city: "Denver",
+        city: "Dublin",
         state: "CO",
-        zip: "80206",
-        country: "US",
+        zip: "D6W PV40",
+        country: "IE",
         mapLink: "https://maps.app.goo.gl/TEdS5KoLC9ZcULuQ6",
     },
     socials: {
