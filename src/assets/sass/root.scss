@@ -15,6 +15,7 @@
 	:root {
 		--primary: #518046;
 		--primaryLight: #77a56c;
+		--superLight: #eff2ee;
 		--secondary: #ffba43;
 		--secondaryLight: #ffba43;
 		--headerColor: #1a1a1a;
@@ -56,6 +57,11 @@
 		box-sizing: border-box;
 		margin: 0;
 		padding: 0;
+	}
+
+	.cs-drop-icon {
+		filter: hue-rotate(
+			75deg);
 	}
 
 	.cs-topper {
@@ -912,7 +918,7 @@
 				box-sizing: border-box;
 				padding: calc(12 / 16 * 1rem);
 				color: var(--bodyTextColor);
-				background-color: #f7f7f7;
+				background-color: var(--superLight);
 				outline: none;
 				display: block;
 				transition: color 0.3s, background-color 0.3s;
@@ -952,10 +958,6 @@
 				}
 			}
 
-			.cs-drop-icon {
-				/* turns it white */
-				filter: grayscale(1) brightness(1000%);
-			}
 		}
 	}
 }
