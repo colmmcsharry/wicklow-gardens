@@ -1,0 +1,87 @@
+---
+title: "Beige Garden Paving Gallery | Monkstown Landscaping & Paving"
+description: "View our beige and natural stone garden installations across Dublin. Elegant paving solutions."
+permalink: "/beige-garden/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+    <!-- Masonry JS -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js" defer></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js" defer></script>
+{% endblock %}
+
+{% block body %}
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Beige Garden Gallery</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/beige-garden/" class="cs-link cs-active">Beige Garden Gallery</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="/assets/images/beige-garden/beige1.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/beige-garden/beige1.jpg">
+            <img src="/assets/images/beige-garden/beige1.jpg" alt="beige garden paving" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <section id="gallery-48">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Work</span>
+                <h2 class="cs-title">Beige & Natural Stone Gardens</h2>
+            </div>
+            <div class="cs-image-group" id="gallery-masonry">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/beige-garden/beige1.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/beige-garden/beige1.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/beige-garden/beige1.jpg" alt="beige paving slabs">
+                </picture>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/beige-garden/beige2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/beige-garden/beige2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/beige-garden/beige2.jpg" alt="natural stone garden">
+                </picture>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/beige-garden/beige3.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/beige-garden/beige3.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/beige-garden/beige3.jpg" alt="beige patio">
+                </picture>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/beige-garden/beige4.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/beige-garden/beige4.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/beige-garden/beige4.jpg" alt="garden paving">
+                </picture>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/beige-garden/beige5.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/beige-garden/beige5.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/beige-garden/beige5.jpg" alt="completed beige garden">
+                </picture>
+            </div>
+            
+            <script>
+                window.addEventListener('load', function() {
+                    var elem = document.querySelector('#gallery-masonry');
+                    imagesLoaded(elem, function() {
+                        new Masonry(elem, {
+                            itemSelector: '.cs-picture',
+                            gutter: 20,
+                            percentPosition: true,
+                            horizontalOrder: true
+                        });
+                    });
+                });
+            </script>
+            <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
+

@@ -35,85 +35,50 @@
         }
 
         .cs-image-group {
-            /* used rem so it doesn't scale with the font size of on parent */
-            font-size: min(1.1vw, 1em);
             width: 100%;
             padding: 0;
             margin: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            /* 8px - 20px */
-            gap: clamp(0.5rem, 2vw, 1.25rem);
-        }
-
-        .cs-row {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            /* 8px - 20px */
-            gap: clamp(0.5rem, 2vw, 1.25rem);
+            /* Masonry will handle the layout */
         }
 
         .cs-picture {
             width: 100%;
-            position: relative;
+            /* Mobile: full width, stacked */
+            margin-bottom: clamp(0.5rem, 2vw, 1.25rem);
             display: block;
             border-radius: calc(8 / 16 * 1rem);
             overflow: hidden;
+            transition: transform 0.3s ease;
+
+            &:hover {
+                transform: translateY(-4px);
+            }
 
             img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
                 width: 100%;
-                object-fit: cover;
+                height: auto;
+                display: block;
+                /* Let image keep natural aspect ratio */
             }
         }
+    }
+}
 
-        .cs-row-1 {
-            .cs-picture-1 {
-                height: calc(567 / 16 * 1em);
-            }
-
-            .cs-picture-2 {
-                height: calc(629 / 16 * 1em);
-            }
-
-            .cs-picture-3 {
-                height: calc(512 / 16 * 1em);
-            }
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #gallery-48 {
+        .cs-picture {
+            /* Masonry will set width dynamically */
+            width: calc(50% - 10px); /* 2 columns on tablet */
         }
+    }
+}
 
-        .cs-row-2 {
-            .cs-picture-1 {
-                height: calc(492 / 16 * 1em);
-            }
-
-            .cs-picture-2 {
-                height: calc(517 / 16 * 1em);
-            }
-
-            .cs-picture-3 {
-                height: calc(629 / 16 * 1em);
-            }
-        }
-
-        .cs-row-3 {
-            .cs-picture-1 {
-                height: calc(625 / 16 * 1em);
-            }
-
-            .cs-picture-2 {
-                height: calc(452 / 16 * 1em);
-            }
-
-            .cs-picture-3 {
-                height: calc(629 / 16 * 1em);
-            }
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #gallery-48 {
+        .cs-picture {
+            width: calc(33.333% - 14px); /* 3 columns on desktop */
         }
 
         .cs-button-solid {

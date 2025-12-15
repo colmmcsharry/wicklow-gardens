@@ -1,0 +1,87 @@
+---
+title: "Garden Walls & Pillars Gallery | Monkstown Landscaping & Paving"
+description: "View our garden wall and pillar construction projects across Dublin. Professional masonry services."
+permalink: "/garden-walls/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+    <!-- Masonry JS -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js" defer></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js" defer></script>
+{% endblock %}
+
+{% block body %}
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Garden Walls Gallery</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/garden-walls/" class="cs-link cs-active">Garden Walls Gallery</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="/assets/images/garden-wall/g-wall1.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/garden-wall/g-wall1.jpg">
+            <img src="/assets/images/garden-wall/g-wall1.jpg" alt="garden wall" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <section id="gallery-48">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Work</span>
+                <h2 class="cs-title">Garden Walls & Pillars</h2>
+            </div>
+            <div class="cs-image-group" id="gallery-masonry">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/garden-wall/g-wall1.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/garden-wall/g-wall1.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/garden-wall/g-wall1.jpg" alt="garden wall construction">
+                </picture>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/garden-wall/g-wall2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/garden-wall/g-wall2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/garden-wall/g-wall2.jpg" alt="stone garden wall">
+                </picture>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/garden-wall/g-wall3.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/garden-wall/g-wall3.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/garden-wall/g-wall3.jpg" alt="brick garden wall">
+                </picture>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/garden-wall/g-wall4.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/garden-wall/g-wall4.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/garden-wall/g-wall4.jpg" alt="garden pillar">
+                </picture>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/garden-wall/g-wall5.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/garden-wall/g-wall5.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/garden-wall/g-wall5.jpg" alt="completed garden wall">
+                </picture>
+            </div>
+            
+            <script>
+                window.addEventListener('load', function() {
+                    var elem = document.querySelector('#gallery-masonry');
+                    imagesLoaded(elem, function() {
+                        new Masonry(elem, {
+                            itemSelector: '.cs-picture',
+                            gutter: 20,
+                            percentPosition: true,
+                            horizontalOrder: true
+                        });
+                    });
+                });
+            </script>
+            <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
+

@@ -1,0 +1,87 @@
+---
+title: "Pergola Installation Gallery | Monkstown Landscaping & Paving"
+description: "Browse our custom pergola installations across Dublin. Transform your garden with beautiful outdoor structures."
+permalink: "/pergola-garden/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+    <!-- Masonry JS -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js" defer></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js" defer></script>
+{% endblock %}
+
+{% block body %}
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Pergola Gallery</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/pergola-garden/" class="cs-link cs-active">Pergola Gallery</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="/assets/images/pergola-garden/pergola1.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/pergola-garden/pergola1.jpg">
+            <img src="/assets/images/pergola-garden/pergola1.jpg" alt="pergola installation" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <section id="gallery-48">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Work</span>
+                <h2 class="cs-title">Custom Pergola Installations</h2>
+            </div>
+            <div class="cs-image-group" id="gallery-masonry">
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/pergola-garden/pergola1.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/pergola-garden/pergola1.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/pergola-garden/pergola1.jpg" alt="garden pergola">
+                </picture>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/pergola-garden/pergola2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/pergola-garden/pergola2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/pergola-garden/pergola2.jpg" alt="outdoor pergola">
+                </picture>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/pergola-garden/pergola3.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/pergola-garden/pergola3.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/pergola-garden/pergola3.jpg" alt="timber pergola">
+                </picture>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/pergola-garden/pergola4.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/pergola-garden/pergola4.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/pergola-garden/pergola4.jpg" alt="pergola with paving">
+                </picture>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/pergola-garden/pergola5.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/pergola-garden/pergola5.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/pergola-garden/pergola5.jpg" alt="completed pergola">
+                </picture>
+            </div>
+            
+            <script>
+                window.addEventListener('load', function() {
+                    var elem = document.querySelector('#gallery-masonry');
+                    imagesLoaded(elem, function() {
+                        new Masonry(elem, {
+                            itemSelector: '.cs-picture',
+                            gutter: 20,
+                            percentPosition: true,
+                            horizontalOrder: true
+                        });
+                    });
+                });
+            </script>
+            <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
+

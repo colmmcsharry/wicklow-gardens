@@ -34,16 +34,37 @@
                     <!-- Note: When copying this dropdown, update the id attribute with an appropriate name (e.g., "services-dropdown-toggle", "products-dropdown-toggle") and ensure the aria-labelledby attribute on the ul matches the button's id -->
                     <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                     <li class="cs-li cs-dropdown">
-                        <button class="cs-li-link cs-dropdown-toggle {% if page.url == "/project-one/" or page.url == "/project-two/" %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="projects-dropdown-toggle">
-                            Projects
+                        <button class="cs-li-link cs-dropdown-toggle {% if '/driveways/' in page.url or '/garden-slabs/' in page.url or '/shiny-slabs/' in page.url or '/garden-walls/' in page.url or '/pergola-garden/' in page.url or '/beige-garden/' in page.url or '/paving-slabs/' in page.url or '/before-after-garden/' in page.url or '/garden-overhaul/' in page.url %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="projects-dropdown-toggle">
+                            Gallery
                             <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
                         </button>
                         <ul class="cs-drop-ul" aria-labelledby="projects-dropdown-toggle">
                             <li class="cs-drop-li">
-                                <a href="/project-one/" class="cs-li-link cs-drop-link">Project One</a>
+                                <a href="/driveways/" class="cs-li-link cs-drop-link">Driveways</a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="/project-two/" class="cs-li-link cs-drop-link">Project Two</a>
+                                <a href="/garden-slabs/" class="cs-li-link cs-drop-link">Garden Slabs</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/shiny-slabs/" class="cs-li-link cs-drop-link">Polished Slabs</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/paving-slabs/" class="cs-li-link cs-drop-link">Paving Slabs</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/garden-walls/" class="cs-li-link cs-drop-link">Garden Walls</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/pergola-garden/" class="cs-li-link cs-drop-link">Pergolas</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/beige-garden/" class="cs-li-link cs-drop-link">Beige Gardens</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/before-after-garden/" class="cs-li-link cs-drop-link">Before & After</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/garden-overhaul/" class="cs-li-link cs-drop-link">Garden Renovations</a>
                             </li>
                         </ul>
                     </li>

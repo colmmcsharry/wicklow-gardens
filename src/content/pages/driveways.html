@@ -1,0 +1,115 @@
+---
+title: "Driveway Paving Gallery | Monkstown Landscaping & Paving"
+description: "Browse our portfolio of beautiful driveway installations across Dublin, Wicklow, Kildare, and Louth. Professional paving services with exceptional results."
+permalink: "/driveways/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/projects.css">
+    <!-- Masonry JS -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js" defer></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js" defer></script>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Driveway Paving Gallery</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/driveways/" class="cs-link cs-active">Driveway Gallery</a>
+            </div>
+        </div>
+        <!--Background Image-->
+
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="/assets/images/driveways/driveway1.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="/assets/images/driveways/driveway1.jpg">
+            <img src="/assets/images/driveways/driveway1.jpg" alt="driveway paving" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery-48">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Work</span>
+                <h2 class="cs-title">Premium Driveway Installations</h2>
+            </div>
+            <div class="cs-image-group" id="gallery-masonry">
+                <!-- FIRST: driveway2 and driveway4 -->
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/driveways/driveway2.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/driveways/driveway2.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/driveways/driveway2.jpg" alt="paved driveway">
+                </picture>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/driveways/driveway4.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/driveways/driveway4.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/driveways/driveway4.jpg" alt="residential driveway">
+                </picture>
+                <!-- Middle images -->
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/driveways/driveway1.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/driveways/driveway1.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/driveways/driveway1.jpg" alt="driveway installation">
+                </picture>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/driveways/driveway5.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/driveways/driveway5.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/driveways/driveway5.jpg" alt="modern driveway">
+                </picture>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/driveways/driveway8.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/driveways/driveway8.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/driveways/driveway8.jpg" alt="completed driveway">
+                </picture>
+                <!-- LAST: driveway3 and driveway7 -->
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/driveways/driveway3.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/driveways/driveway3.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/driveways/driveway3.jpg" alt="driveway paving">
+                </picture>
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)" srcset="/assets/images/driveways/driveway7.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/driveways/driveway7.jpg">
+                    <img loading="lazy" decoding="async" src="/assets/images/driveways/driveway7.jpg" alt="stone driveway">
+                </picture>
+            </div>
+            
+            <script>
+                // Initialize Masonry after images load
+                window.addEventListener('load', function() {
+                    var elem = document.querySelector('#gallery-masonry');
+                    
+                    // Wait for all images to load
+                    imagesLoaded(elem, function() {
+                        var msnry = new Masonry(elem, {
+                            itemSelector: '.cs-picture',
+                            gutter: 20,
+                            percentPosition: true,
+                            horizontalOrder: true
+                        });
+                    });
+                });
+            </script>
+            <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
+
