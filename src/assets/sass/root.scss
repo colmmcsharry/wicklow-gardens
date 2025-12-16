@@ -18,7 +18,7 @@
 		--superLight: #f9fbf9;
 		--secondary: #ffba43;
 		--secondaryLight: #ffba43;
-		--headerColor: #1a1a1a;
+		--headerColor: #3e3e3e;
 		--bodyTextColor: #4e4b66;
 		--bodyTextColorWhite: #fafbfc;
 
@@ -540,7 +540,7 @@
 		.cs-line {
 			width: 100%;
 			height: 2px;
-			background-color: #1a1a1a;
+			background-color: var(--headerColor);
 			border-radius: 2px;
 			position: absolute;
 			left: 50%;
@@ -1298,7 +1298,7 @@
 @media only screen and (min-width: 0px) {
 	#cs-footer-275 {
 		padding: var(--sectionPadding);
-		background-color: #1a1a1a;
+		background-color: var(--headerColor);
 
 		.cs-container {
 			width: 100%;
@@ -1370,7 +1370,7 @@
 			transition: transform 0.3s, background-color 0.3s;
 
 			&:hover {
-				background-color: #1a1a1a;
+				background-color: var(--headerColor);
 				transform: translateY(-0.1875rem);
 			}
 		}

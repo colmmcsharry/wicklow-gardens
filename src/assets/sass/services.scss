@@ -13,6 +13,7 @@
 @media only screen and (min-width: 0rem) {
     #services-1479 {
         padding: var(--sectionPadding);
+        padding-bottom: 0;
 
         .cs-container {
             width: 100%;
@@ -228,8 +229,8 @@
         border-right: 1px solid #e8e8e8;
     }
     #services-1304 .cs-item:hover {
-        background-color: #1a1a1a;
-        border-color: #1a1a1a;
+        background-color: var(--headerColor);
+        border-color: var(--headerColor);
     }
     #services-1304 .cs-item:hover .cs-h3,
     #services-1304 .cs-item:hover .cs-item-text {
