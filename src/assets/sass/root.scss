@@ -478,6 +478,7 @@
 			max-width: calc(146 / 16 * 1rem);
 			height: 100%;
 			margin: 0 auto 0 0;
+			border-radius: 10px;
 			/* prevents padding and border from affecting height and width */
 			box-sizing: border-box;
 			padding: 0;
@@ -489,6 +490,7 @@
 			img {
 				width: 100%;
 				height: 100%;
+				border-radius: 10px;
 				/* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
 				object-fit: contain;
 				/* places the image to the left edge of the parent */
@@ -683,10 +685,10 @@
 		#cs-navigation {
 			background-color: var(--dark);
 
-			.cs-logo {
-				/* makes it white */
-				filter: grayscale(1) brightness(1000%);
-			}
+			// .cs-logo {
+			// 	/* makes it white */
+			// 	filter: grayscale(1) brightness(1000%);
+			// }
 
 			.cs-line {
 				background-color: #fff;
@@ -993,6 +995,7 @@
 		}
 
 		.cs-logo {
+			border-radius: 10px;
 			width: 18.4%;
 			max-width: calc(350 / 16 * 1rem);
 			height: calc(65 / 16 * 1rem);
@@ -1007,6 +1010,7 @@
 			img {
 				width: 100%;
 				height: 100%;
+				border-radius: 10px;
 				/* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
 				object-fit: contain;
 			}
@@ -1076,7 +1080,8 @@
 
 			.cs-logo {
 				/* makes it turn white */
-				filter: grayscale(1) brightness(1000%);
+				// filter: grayscale(1) brightness(1000%);
+				border-radius: 10px;
 			}
 
 			.cs-li-link {
@@ -1315,6 +1320,7 @@
 		}
 
 		.cs-logo {
+			border-radius: 10px;
 			/* 210px - 240px */
 			width: clamp(13.125rem, 8vw, 15rem);
 			height: auto;
@@ -1324,8 +1330,12 @@
 		}
 
 		.cs-logo-img {
+			border-radius: 10px;
 			width: 100%;
 			height: auto;
+			border-radius: 10px;
+			background: white;
+			padding: 10px;
 
 			&.dark {
 				display: none;
