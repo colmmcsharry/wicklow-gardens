@@ -1,8 +1,8 @@
 module.exports = {
     name: "Monkstown Paving and Lanscaping",
     email: "monkstownpavingandlandscaping@gmail.com",
-    phoneForTel: "44-7851-8894-988",
-    phoneFormatted: "(+44) 7851-8894-988",
+    phoneForTel: "085-786-9725",
+    phoneFormatted: "(085) 786-9725",
     address: {
         lineOne: "First Address Line",
         lineTwo: "Second Address Line",
