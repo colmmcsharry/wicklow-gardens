@@ -264,7 +264,7 @@
       min-width: 19.375rem;
       width: 100%;
       height: auto;
-      filter: grayscale(1);
+    //   filter: grayscale(1);
       display: none;
       position: absolute;
       /* changes to 0 at large desktop */
@@ -520,5 +520,11 @@
                 color: var(--primaryLight);
             }
         }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #why-choose-1479 h3 {
+        text-wrap: nowrap;
     }
 }
