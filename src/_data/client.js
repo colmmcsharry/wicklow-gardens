@@ -1,8 +1,8 @@
 module.exports = {
     name: "Monkstown Paving and Lanscaping",
-    email: "help@codestitch.app",
-    phoneForTel: "555-779-4407",
-    phoneFormatted: "(555) 779-4407",
+    email: "monkstownpavingandlandscaping@gmail.com",
+    phoneForTel: "44-7851-8894-988",
+    phoneFormatted: "(+44) 7851-8894-988",
     address: {
         lineOne: "First Address Line",
         lineTwo: "Second Address Line",

@@ -1,0 +1,150 @@
+---
+title: "Services | Monkstown Landscaping & Paving"
+description: "Professional paving and landscaping services across Dublin, Wicklow, Kildare, and Louth. Driveways, patios, garden walls, pergolas and more."
+permalink: "/services/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/driveways/driveway1.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/services.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Our Services</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/services/" class="cs-link cs-active">Services</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="paving services" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                 Services Content              -->
+    <!-- ============================================ -->
+
+    <section id="services-1479">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Our Services</span>
+                <h2 class="cs-title">Professional Landscaping & Paving Services</h2>
+                <p class="cs-text">
+                    From driveways to complete garden overhauls, we offer a comprehensive range of landscaping and paving services across Dublin, Wicklow, Kildare, and Louth. Click a service below to learn more.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+<!--                    Services                  -->
+<!-- ============================================ -->
+
+<section id="services-1304">
+    <div class="cs-container">
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/brain.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <h3 class="cs-h3">Creative Solutions</h3>
+                    <p class="cs-item-text">
+                        We will go ahead that extra mile to ensure our clients welfare, our working hours convenient to our Client's from contact.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/users.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <h3 class="cs-h3">Professional Team</h3>
+                    <p class="cs-item-text">
+                        We will go ahead that extra mile to ensure our clients welfare, our working hours convenient to our Client's from contact.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Layer.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <h3 class="cs-h3">Diverse Approach</h3>
+                    <p class="cs-item-text">
+                        We will go ahead that extra mile to ensure our clients welfare, our working hours convenient to our Client's from contact.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Layer.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <h3 class="cs-h3">Diverse Approach</h3>
+                    <p class="cs-item-text">
+                        We will go ahead that extra mile to ensure our clients welfare, our working hours convenient to our Client's from contact.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/brain.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <h3 class="cs-h3">Creative Solutions</h3>
+                    <p class="cs-item-text">
+                        We will go ahead that extra mile to ensure our clients welfare, our working hours convenient to our Client's from contact.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/users.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <h3 class="cs-h3">Professional Team</h3>
+                    <p class="cs-item-text">
+                        We will go ahead that extra mile to ensure our clients welfare, our working hours convenient to our Client's from contact.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Layer.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <h3 class="cs-h3">Diverse Approach</h3>
+                    <p class="cs-item-text">
+                        We will go ahead that extra mile to ensure our clients welfare, our working hours convenient to our Client's from contact.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Layer.svg" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                    <h3 class="cs-h3">Diverse Approach</h3>
+                    <p class="cs-item-text">
+                        We will go ahead that extra mile to ensure our clients welfare, our working hours convenient to our Client's from contact.
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
+
