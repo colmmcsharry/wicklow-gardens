@@ -309,5 +309,30 @@
     .cs-video-grid {
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
     }
+    
+    /* Limit portrait video height on desktop */
+    .cs-portrait-video {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+}
+
+/* Desktop - 3 portrait videos side by side */
+@media only screen and (min-width: 1024px) {
+    .cs-video-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: clamp(2rem, 3vw, 2.5rem);
+    }
+    
+    /* Portrait videos stay limited in width */
+    .cs-portrait-video {
+        max-width: 360px;
+    }
+    
+    /* Landscape video spans all 3 columns */
+    .cs-landscape-video {
+        grid-column: 1 / -1;
+        max-width: 100%;
+    }
 }
 
