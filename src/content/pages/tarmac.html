@@ -1,0 +1,64 @@
+---
+title: "Tarmac Driveways Dublin | Monkstown Landscaping & Paving"
+description: "Smooth, durable tarmac surfacing for driveways and paths across Dublin, Wicklow, Kildare, and Louth. Professional installation with excellent value."
+permalink: "/tarmac/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Tarmac</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/services/" class="cs-link">Services</a>
+                <a href="/tarmac/" class="cs-link cs-active">Tarmac</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="tarmac installation" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <section id="RPsbs-313">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Tarmac Services</span>
+                <h2 class="cs-title">Professional Tarmac Installation in Dublin, Wicklow, Kildare & Louth</h2>
+                <p class="cs-text">
+                    Smooth, durable tarmac surfacing for driveways and paths across Dublin, Wicklow, Kildare, and Louth. Tarmac offers excellent value and long-lasting results, making it a popular choice for homeowners throughout Ireland. Our professional installation ensures your tarmac surface is smooth, level, and built to withstand the Irish weather for years to come.
+                </p>
+                <p class="cs-text">
+                    Tarmac is an ideal solution for driveways, especially in areas with heavy vehicle traffic. We install high-quality tarmac that provides a smooth, even surface perfect for cars and pedestrians. Whether you're in Dublin city, the suburbs of Wicklow, or rural Kildare and Louth, our tarmac installation service brings professional results at competitive prices.
+                </p>
+                <p class="cs-text">
+                    Proper installation is crucial for tarmac longevity. We ensure proper base preparation and correct tarmac thickness, especially important in areas with challenging ground conditions like parts of Wicklow and Louth. Our experienced team works throughout Dublin, Kildare, Wicklow, and Louth, bringing expert knowledge of local conditions and requirements.
+                </p>
+                <p class="cs-text">
+                    Tarmac driveways and paths require minimal maintenance and provide a clean, professional appearance. We offer both new installations and resurfacing services for existing tarmac that has deteriorated. Contact us today for a free quote on your tarmac project in Dublin, Wicklow, Kildare, or Louth.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
+

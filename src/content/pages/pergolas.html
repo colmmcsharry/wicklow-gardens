@@ -1,0 +1,64 @@
+---
+title: "Pergola Installation Dublin | Monkstown Landscaping & Paving"
+description: "Transform your garden with custom-built pergolas across Dublin, Wicklow, Kildare, and Louth. Timber and aluminium options, free-standing or wall-mounted."
+permalink: "/pergolas/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Pergolas</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/services/" class="cs-link">Services</a>
+                <a href="/pergolas/" class="cs-link cs-active">Pergolas</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="pergola installation" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <section id="RPsbs-313">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Pergola Installation</span>
+                <h2 class="cs-title">Custom Pergola Installation in Dublin, Wicklow, Kildare & Louth</h2>
+                <p class="cs-text">
+                    Transform your garden with a custom-built pergola that creates the perfect outdoor living space. We install timber and aluminium pergolas throughout Dublin, Wicklow, Kildare, and Louth, offering free-standing, wall-mounted, and roofed options. Perfect for creating shade and defining outdoor areas, pergolas add both beauty and functionality to your garden.
+                </p>
+                <p class="cs-text">
+                    Our pergola installations are designed to complement your existing garden and home architecture. Whether you're looking for a traditional timber pergola for a Wicklow country garden or a modern aluminium structure for a Dublin city patio, we can create the perfect solution. We work closely with customers across Kildare and Louth to design pergolas that meet their specific needs and style preferences.
+                </p>
+                <p class="cs-text">
+                    Timber pergolas offer a natural, traditional look that blends beautifully with Irish gardens, while aluminium pergolas provide a low-maintenance, modern alternative. We consider factors like exposure to wind and weather when recommending materials, especially important for coastal areas in Wicklow or exposed locations in Louth. Our expert installation ensures your pergola is structurally sound and built to last.
+                </p>
+                <p class="cs-text">
+                    From simple structures that provide partial shade to fully roofed pergolas that create all-weather outdoor rooms, we offer solutions for every garden size and budget. We serve customers across Dublin, Wicklow, Kildare, and Louth, providing free quotes and expert advice. Contact us today to discuss your pergola project and start creating your perfect outdoor space.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
+

@@ -1,0 +1,64 @@
+---
+title: "Porcelain Paving Dublin | Monkstown Landscaping & Paving"
+description: "Premium porcelain paving installation across Dublin, Wicklow, Kildare, and Louth. Durable, weather-resistant paving with expert installation."
+permalink: "/porcelain-paving/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Porcelain Paving</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/services/" class="cs-link">Services</a>
+                <a href="/porcelain-paving/" class="cs-link cs-active">Porcelain Paving</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="porcelain paving" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <section id="RPsbs-313">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Porcelain Paving</span>
+                <h2 class="cs-title">Premium Porcelain Paving Installation in Dublin, Wicklow, Kildare & Louth</h2>
+                <p class="cs-text">
+                    Choose porcelain paving for a durable and stylish outdoor upgrade that withstands the Irish weather. Porcelain paving is not only exceptionally strong but also highly resistant to stains, frost, and weather damage, making it perfect for properties across Dublin, Wicklow, Kildare, and Louth. Our team guarantees a neat and lasting finish that will enhance your outdoor space for years to come.
+                </p>
+                <p class="cs-text">
+                    We offer a comprehensive range of porcelain paving styles to suit all tastes and property types. Whether you're looking for a modern finish for a Dublin city garden or a traditional look for a Wicklow country home, we have the perfect porcelain paving solution. Our experienced installers work throughout Kildare and Louth, bringing professional expertise to every project.
+                </p>
+                <p class="cs-text">
+                    Porcelain paving is ideal for patios, pathways, and outdoor living areas because it requires minimal maintenance and stays looking beautiful year-round. Unlike natural stone, porcelain is non-porous, meaning it won't absorb water or stains. This makes it perfect for the wet Irish climate, especially in areas like Wicklow and Louth where rainfall can be heavy.
+                </p>
+                <p class="cs-text">
+                    Our installation process ensures your porcelain paving is laid perfectly, with attention to detail and expert craftsmanship. We serve customers across Dublin, Wicklow, Kildare, and Louth, providing free quotes and professional advice. Contact us today to discuss your porcelain paving project and discover why it's the perfect choice for Irish homes.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
+

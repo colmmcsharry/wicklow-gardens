@@ -1,0 +1,64 @@
+---
+title: "Garden Walls Dublin | Monkstown Landscaping & Paving"
+description: "Professional garden wall and pillar construction across Dublin, Wicklow, Kildare, and Louth. From brick and blocks to natural stone walls."
+permalink: "/garden-walls-service/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Garden Walls</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/services/" class="cs-link">Services</a>
+                <a href="/garden-walls-service/" class="cs-link cs-active">Garden Walls</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="garden walls" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <section id="RPsbs-313">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Garden Walls</span>
+                <h2 class="cs-title">Professional Garden Wall Construction in Dublin, Wicklow, Kildare & Louth</h2>
+                <p class="cs-text">
+                    Professional garden wall and pillar construction across Dublin, Wicklow, Kildare, and Louth. We have a professional team of builders on our crew ready to build your new garden walls or pillars. We cover it all from brick, blocks, natural stone walls and pillars - we cover it all. Our skilled craftsmen bring years of experience to every project, ensuring your walls are built to last.
+                </p>
+                <p class="cs-text">
+                    Garden walls serve multiple purposes including privacy, security, boundary definition, and aesthetic enhancement. Whether you need a low decorative wall for a Dublin city garden or a substantial boundary wall for a rural property in Wicklow, Kildare, or Louth, we can create the perfect solution. We work with various materials including traditional brick, concrete blocks, and natural stone, each offering different benefits and aesthetics.
+                </p>
+                <p class="cs-text">
+                    Our team understands the importance of proper foundations and construction techniques, especially crucial in areas with challenging ground conditions like parts of Wicklow and Louth. We ensure all walls are built to proper standards with adequate foundations, correct mortar mixes, and expert craftsmanship. Our builders work throughout Dublin, Kildare, Wicklow, and Louth, bringing local knowledge and professional expertise to every project.
+                </p>
+                <p class="cs-text">
+                    We also offer plastering, rendering, and dashing services to finish your new garden walls, complementing a new garden or matching new walls to the finish on your house. Contact us today for a free quote on your garden wall or pillar project in Dublin, Wicklow, Kildare, or Louth.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
+

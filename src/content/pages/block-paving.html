@@ -1,0 +1,64 @@
+---
+title: "Block Paving Dublin | Monkstown Landscaping & Paving"
+description: "High-quality block paving installation for driveways, paths, and patios across Dublin, Wicklow, Kildare, and Louth. Durable and attractive paving solutions."
+permalink: "/block-paving/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Block Paving</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/services/" class="cs-link">Services</a>
+                <a href="/block-paving/" class="cs-link cs-active">Block Paving</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="block paving" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <section id="RPsbs-313">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Block Paving</span>
+                <h2 class="cs-title">Professional Block Paving Services in Dublin, Wicklow, Kildare & Louth</h2>
+                <p class="cs-text">
+                    High-quality block paving installation for driveways, paths, and patios across Dublin, Wicklow, Kildare, and Louth. Our block paving is durable, attractive, and built to last for many years, making it an excellent investment for your property. We supply only the best materials and use expert installation techniques to ensure your block paving withstands the Irish weather.
+                </p>
+                <p class="cs-text">
+                    Block paving offers versatility and style, with numerous patterns and color options available to complement your home. Whether you're in Dublin city, the suburbs of Wicklow, or rural Kildare and Louth, we can create a stunning block paved surface that enhances your property's curb appeal. Our experienced team understands the importance of proper base preparation and drainage, especially crucial in areas with heavy rainfall like Wicklow and Louth.
+                </p>
+                <p class="cs-text">
+                    We specialize in creating beautiful block paved driveways that make a strong first impression. Our installation process includes proper excavation, base preparation, and expert laying to ensure your driveway remains level and stable for years to come. We work throughout Dublin, Wicklow, Kildare, and Louth, bringing professional service and quality craftsmanship to every project.
+                </p>
+                <p class="cs-text">
+                    Block paving is also perfect for patios and pathways, offering a traditional look that complements Irish homes. With proper maintenance, block paving can last decades, making it a cost-effective choice for homeowners across Dublin, Wicklow, Kildare, and Louth. Contact us today for a free quote on your block paving project.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
+

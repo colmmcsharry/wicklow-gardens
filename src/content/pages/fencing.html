@@ -1,0 +1,64 @@
+---
+title: "Fencing Installation Dublin | Monkstown Landscaping & Paving"
+description: "Professional fencing installation for privacy, security, and boundary definition across Dublin, Wicklow, Kildare, and Louth. Quality materials and expert craftsmanship."
+permalink: "/fencing/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Fencing</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/services/" class="cs-link">Services</a>
+                <a href="/fencing/" class="cs-link cs-active">Fencing</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="fencing installation" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <section id="RPsbs-313">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Fencing Services</span>
+                <h2 class="cs-title">Professional Fencing Installation in Dublin, Wicklow, Kildare & Louth</h2>
+                <p class="cs-text">
+                    Professional fencing installation for privacy, security, and boundary definition across Dublin, Wicklow, Kildare, and Louth. We use quality materials and expert craftsmanship to create fencing solutions that are both functional and attractive. Whether you need privacy fencing for a Dublin city garden or boundary fencing for a rural property in Kildare, we have the expertise to deliver.
+                </p>
+                <p class="cs-text">
+                    Our fencing services cover a wide range of materials and styles, from traditional timber fencing to modern composite and metal options. We understand that fencing needs vary across different areas - coastal properties in Wicklow may require weather-resistant materials, while properties in Louth might need sturdy fencing to withstand strong winds. Our team provides expert advice on the best fencing solution for your specific location and requirements.
+                </p>
+                <p class="cs-text">
+                    Proper fencing installation is crucial for longevity and performance. We ensure all posts are set at the correct depth with proper concrete foundations, especially important in areas with challenging ground conditions like parts of Wicklow and Louth. Our experienced installers work throughout Dublin, Kildare, Wicklow, and Louth, bringing professional standards to every project.
+                </p>
+                <p class="cs-text">
+                    From decorative garden fencing to secure boundary fencing, we create solutions that enhance your property while meeting your practical needs. We serve customers across Dublin, Wicklow, Kildare, and Louth, providing free quotes and professional installation. Contact us today to discuss your fencing requirements.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
+

@@ -34,7 +34,7 @@
                     <!-- Note: When copying this dropdown, update the id attribute with an appropriate name (e.g., "services-dropdown-toggle", "products-dropdown-toggle") and ensure the aria-labelledby attribute on the ul matches the button's id -->
                     <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
                     <li class="cs-li cs-dropdown">
-                        <button class="cs-li-link cs-dropdown-toggle {% if '/driveways/' in page.url or '/garden-slabs/' in page.url or '/shiny-slabs/' in page.url or '/garden-walls/' in page.url or '/pergola-garden/' in page.url or '/beige-garden/' in page.url or '/paving-slabs/' in page.url or '/before-after-garden/' in page.url or '/garden-overhaul/' in page.url %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="projects-dropdown-toggle">
+                        <button class="cs-li-link cs-dropdown-toggle {% if '/driveways/' in page.url or '/slabbing-and-paving/' in page.url or '/garden-walls/' in page.url or '/pergola-garden/' in page.url or '/before-after-garden/' in page.url or '/garden-overhaul/' in page.url %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="projects-dropdown-toggle">
                             Gallery
                             <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
                         </button>
@@ -43,22 +43,13 @@
                                 <a href="/driveways/" class="cs-li-link cs-drop-link">Driveways</a>
                             </li>
                             <li class="cs-drop-li">
-                                <a href="/garden-slabs/" class="cs-li-link cs-drop-link">Garden Slabs</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="/shiny-slabs/" class="cs-li-link cs-drop-link">Polished Slabs</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="/paving-slabs/" class="cs-li-link cs-drop-link">Paving Slabs</a>
+                                <a href="/slabbing-and-paving/" class="cs-li-link cs-drop-link">Slabbing and Paving</a>
                             </li>
                             <li class="cs-drop-li">
                                 <a href="/garden-walls/" class="cs-li-link cs-drop-link">Garden Walls</a>
                             </li>
                             <li class="cs-drop-li">
                                 <a href="/pergola-garden/" class="cs-li-link cs-drop-link">Pergolas</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="/beige-garden/" class="cs-li-link cs-drop-link">Beige Gardens</a>
                             </li>
                             <li class="cs-drop-li">
                                 <a href="/before-after-garden/" class="cs-li-link cs-drop-link">Before & After</a>
@@ -78,10 +69,49 @@
                             Blog
                         </a>
                     </li> -->
-                    <li class="cs-li">
-                        <a href="/services/" class="cs-li-link {% if page.url == "/services/" %} cs-active {% endif %}" {% if page.url == "/services/" %} aria-current="page" {% endif %}>
+                    <li class="cs-li cs-dropdown">
+                        <button class="cs-li-link cs-dropdown-toggle {% if '/services/' in page.url or '/landscaping/' in page.url or '/porcelain-paving/' in page.url or '/block-paving/' in page.url or '/driveways-service/' in page.url or '/fencing/' in page.url or '/pergolas/' in page.url or '/tarmac/' in page.url or '/patios/' in page.url or '/slabbing/' in page.url or '/imprinted-concrete/' in page.url or '/garden-walls-service/' in page.url or '/extra-services/' in page.url %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="services-dropdown-toggle">
                             Services
-                        </a>
+                            <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
+                        </button>
+                        <ul class="cs-drop-ul" aria-labelledby="services-dropdown-toggle">
+                            <li class="cs-drop-li">
+                                <a href="/services/" class="cs-li-link cs-drop-link">All Services</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/landscaping/" class="cs-li-link cs-drop-link">Landscaping</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/porcelain-paving/" class="cs-li-link cs-drop-link">Porcelain Paving</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/block-paving/" class="cs-li-link cs-drop-link">Block Paving</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/driveways-service/" class="cs-li-link cs-drop-link">Driveways</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/fencing/" class="cs-li-link cs-drop-link">Fencing</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/pergolas/" class="cs-li-link cs-drop-link">Pergolas</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/tarmac/" class="cs-li-link cs-drop-link">Tarmac</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/patios/" class="cs-li-link cs-drop-link">Patios</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/slabbing/" class="cs-li-link cs-drop-link">Slabbing</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/imprinted-concrete/" class="cs-li-link cs-drop-link">Imprinted Concrete</a>
+                            </li>
+                            <li class="cs-drop-li">
+                                <a href="/garden-walls-service/" class="cs-li-link cs-drop-link">Garden Walls</a>
+                            </li>
+                        </ul>
                     </li>
                     <li class="cs-li cs-hide-on-desktop">
                         <a href="/contact/" class="cs-li-link {% if page.url == "/contact/" %} cs-active {% endif %}" {% if page.url == "/contact/" %} aria-current="page" {% endif %}>

@@ -1,0 +1,64 @@
+---
+title: "Garden Slabbing Dublin | Monkstown Landscaping & Paving"
+description: "Professional garden slab installation for paths, patios, and walkways across Dublin, Wicklow, Kildare, and Louth. Expertly laid with attention to detail."
+permalink: "/slabbing/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Slabbing</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/services/" class="cs-link">Services</a>
+                <a href="/slabbing/" class="cs-link cs-active">Slabbing</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="garden slabbing" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <section id="RPsbs-313">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Garden Slabbing</span>
+                <h2 class="cs-title">Professional Slab Installation in Dublin, Wicklow, Kildare & Louth</h2>
+                <p class="cs-text">
+                    Professional garden slab installation for paths, patios, and walkways across Dublin, Wicklow, Kildare, and Louth. Our expertly laid slabs create durable, attractive surfaces that enhance your garden while providing practical pathways and outdoor areas. We pay attention to every detail, ensuring your slabbing is level, properly spaced, and built to last.
+                </p>
+                <p class="cs-text">
+                    Garden slabbing offers versatility and style, with numerous sizes, colors, and finishes available. Whether you're creating a pathway through a Dublin city garden or a patio area in Wicklow, Kildare, or Louth, we can recommend the best slabs for your project. Our experienced team understands the importance of proper base preparation and drainage, especially crucial in areas with heavy rainfall.
+                </p>
+                <p class="cs-text">
+                    We work with various slab materials including natural stone, concrete, and porcelain, each offering different benefits. Natural stone slabs provide a traditional Irish look, while modern concrete and porcelain options offer contemporary style and low maintenance. Our team works throughout Dublin, Wicklow, Kildare, and Louth, bringing expert knowledge of local conditions and material suitability.
+                </p>
+                <p class="cs-text">
+                    Proper installation ensures your slabbing remains stable and level for years to come. We ensure correct base preparation, proper spacing, and expert jointing to create a professional finish. Contact us today for a free quote on your garden slabbing project in Dublin, Wicklow, Kildare, or Louth.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
+

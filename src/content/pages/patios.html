@@ -1,0 +1,64 @@
+---
+title: "Patio Installation Dublin | Monkstown Landscaping & Paving"
+description: "Beautifully designed patios to complement your home across Dublin, Wicklow, Kildare, and Louth. Perfect outdoor living spaces for any size or shape garden."
+permalink: "/patios/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Patios</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/services/" class="cs-link">Services</a>
+                <a href="/patios/" class="cs-link cs-active">Patios</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="patio installation" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <section id="RPsbs-313">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Patio Installation</span>
+                <h2 class="cs-title">Beautiful Patio Installation in Dublin, Wicklow, Kildare & Louth</h2>
+                <p class="cs-text">
+                    A beautifully designed patio is a perfect complement to your home, creating an outdoor living space that extends your home into the garden. Whatever the size or shape of your garden, our professional installers are able to create any appearance to suit different tastes, budgets, and individual requirements. We work throughout Dublin, Wicklow, Kildare, and Louth, bringing expert design and installation to every project.
+                </p>
+                <p class="cs-text">
+                    Patios provide the perfect foundation for outdoor dining, entertaining, and relaxation. We offer a wide range of materials including natural stone, porcelain, block paving, and concrete, each offering different benefits and aesthetics. Whether you're looking for a compact city patio in Dublin or an expansive outdoor space in Wicklow, Kildare, or Louth, we can create the perfect solution.
+                </p>
+                <p class="cs-text">
+                    Our patio installation process includes proper planning, base preparation, and expert laying to ensure your patio remains level and stable. We understand the importance of proper drainage, especially crucial in areas with heavy rainfall like Wicklow and Louth. Our experienced team works throughout Dublin, Kildare, Wicklow, and Louth, bringing local knowledge and professional expertise to every installation.
+                </p>
+                <p class="cs-text">
+                    From traditional Irish stone patios to modern porcelain surfaces, we create outdoor spaces that enhance your home and lifestyle. We work closely with customers across Dublin, Wicklow, Kildare, and Louth to design patios that meet their needs and complement their homes. Contact us today for a free quote on your patio project.
+                </p>
+                <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
+
