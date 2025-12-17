@@ -87,6 +87,8 @@
     #services-1176 .cs-icon {
         width: 4.5rem;
         height: auto;
+        filter: brightness(0.8) grayscale(.1) saturate(.7)  hue-rotate(
+            40deg);
     }
     #services-1176 .cs-h3 {
         /* 20px - 25px */
