@@ -15,6 +15,7 @@
 	:root {
 		--primary: #46804d;
 		--primaryLight: #6ca372;
+		--mediumLight: #cce1ce;
 		--superLight: #f9fbf9;
 		--secondary: #ffba43;
 		--secondaryLight: #ffba43;
@@ -765,7 +766,7 @@
 			margin: 0;
 			box-sizing: border-box;
 			padding: 0 calc(24 / 16 * 1rem) 0 calc(24 / 16 * 1rem);
-			background-color: var(--primary);
+			background-color: var(--mediumLight);
 			opacity: 0;
 			display: flex;
 			visibility: hidden;
@@ -788,7 +789,7 @@
 			&.cs-drop-link {
 				/* 14px - 16px */
 				font-size: clamp(0.875rem, 2vw, 1.25rem);
-				color: #fff;
+				color: var(--bodyTextColor);
 			}
 		}
 	}
@@ -834,6 +835,15 @@
 			width: calc(15 / 16 * 1rem);
 			height: auto;
 			display: inline-block;
+		}
+
+		.cs-service-icon {
+			width: calc(16 / 16 * 1rem);
+			height: auto;
+			display: inline-block;
+			margin-right: calc(8 / 16 * 1rem);
+			vertical-align: middle;
+			filter: brightness(0.5) grayscale(0.5);
 		}
 
 		.cs-drop-ul {
@@ -963,6 +973,27 @@
 		}
 	}
 }
+
+/* Dark Mode */
+@media only screen and (max-width: 1023.5px) {
+	body.dark-mode {
+		#cs-navigation {
+
+			.cs-li-link {
+				&.cs-drop-link {
+					background-color: initial;
+
+					&:hover {
+						background-color: var(--light);
+					}
+				}
+			}
+
+		}
+	}
+}
+
+
 
 /*-- -------------------------- -->
 <---     Desktop Navigation     -->

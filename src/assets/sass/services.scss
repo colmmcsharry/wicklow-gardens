@@ -166,7 +166,7 @@
         /* Circular container - 64px - 80px */
         width: clamp(4rem, 8vw, 5rem);
         height: clamp(4rem, 8vw, 5rem);
-        background-color: rgb(205, 229, 205);
+        background-color: var(--mediumLight);
         border-radius: 50%;
         display: flex;
         align-items: center;

@@ -73,22 +73,28 @@
     #services-1176 .cs-item:hover .cs-arrow {
         filter: hue-rotate(180deg);
     }
-    #services-1176 .cs-picture {
-        width: 6.25rem;
-        height: auto;
-        margin: 0.5rem 0 1.5rem;
+    /* Circular green background wrapper */
+    #services-1176 .cs-icon-wrapper {
+        /* Circular container - 64px - 80px */
+        width: clamp(4rem, 8vw, 5rem);
+        height: clamp(4rem, 8vw, 5rem);
+        background-color: var(--mediumLight);
+        border-radius: 50%;
         display: flex;
-        justify-content: center;
         align-items: center;
-        position: relative;
+        justify-content: center;
+        margin: 0.5rem 0 1.5rem;
+        padding: clamp(0.75rem, 2vw, 1rem);
+        box-sizing: border-box;
         /* prevents flexbox from squishing it */
         flex: none;
     }
     #services-1176 .cs-icon {
-        width: 4.5rem;
+        width: clamp(2rem, 4vw, 2.5rem);
         height: auto;
-        filter: brightness(0.8) grayscale(.1) saturate(.7)  hue-rotate(
-            40deg);
+        /* Filter only applies to the image, not the background */
+        filter: brightness(0.4) grayscale(.7);
+        display: block;
     }
     #services-1176 .cs-h3 {
         /* 20px - 25px */
@@ -364,7 +370,7 @@
     }
 
     #gallery-1152 .cs-topper {
-        color: #767676;
+        color: var(--primary);
     }
     #gallery-1152 .cs-title {
         margin: 0;
