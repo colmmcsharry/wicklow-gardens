@@ -8,7 +8,7 @@ permalink: "/landscaping/"
 
 {% block head %}
     <link rel="preload" as="image" href="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/individual-service.css">
 {% endblock %}
 
 {% block body %}
@@ -36,27 +36,49 @@ permalink: "/landscaping/"
         </picture>
     </div>
 
-    <section id="RPsbs-313">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Landscaping Services</span>
-                <h2 class="cs-title">Professional Landscaping Across Dublin, Wicklow, Kildare & Louth</h2>
-                <p class="cs-text">
-                    Transform your outdoor space with our comprehensive landscaping services. Whether you're in Dublin, Wicklow, Kildare, or Louth, our experienced team brings over 10 years of expertise to create stunning gardens that enhance your property's value and beauty. We specialize in complete garden design and transformation, handling every aspect from initial planning to final installation.
-                </p>
-                <p class="cs-text">
-                    Our landscaping services include raised beds, turf lawns, planting schemes, and complete garden overhauls. We work with both residential and commercial properties throughout the greater Dublin area, including Wicklow, Kildare, and Louth. Our skilled craftsmen understand the unique climate and soil conditions of the region, ensuring your landscaping thrives year-round.
-                </p>
-                <p class="cs-text">
-                    From urban gardens in Dublin city to larger rural properties in Wicklow and Kildare, we design landscapes that complement your home's architecture and your lifestyle. We combine traditional Irish landscaping techniques with modern design principles to create outdoor spaces that are both beautiful and functional. Every project is completed to the highest standards using quality materials and expert craftsmanship.
-                </p>
-                <p class="cs-text">
-                    As a family-owned business, we take pride in every landscaping project we complete. Our commitment to customer satisfaction means we work closely with you throughout the process, from initial consultation to final walkthrough. Contact us today for a free quote on your landscaping project in Dublin, Wicklow, Kildare, or Louth.
-                </p>
-                <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
-            </div>
+    <!-- ============================================ -->
+<!--                Side By Side                  -->
+<!-- ============================================ -->
+
+<section id="sbs-412">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Service</span>
+            <h1 class="cs-title">Professional Landscaping Services in Dublin, Wicklow, Kildare & Louth</h1>
+            <p class="cs-text">
+                Transform your outdoor space with our expert landscaping services across Dublin, Wicklow, Kildare, and Louth. We specialize in complete garden design and transformation, from raised beds and retaining walls to beautiful turf lawns and decorative plantings.
+            </p>
+            <p class="cs-text">
+                Our skilled landscaping team handles all aspects of garden design and installation. Whether you're looking for a complete garden overhaul in Dublin, a modern landscape design in Wicklow, or professional garden maintenance in Kildare or Louth, we deliver exceptional results using premium materials and expert craftsmanship.
+            </p>
+            <p class="cs-text">
+                From initial design consultation to final installation, we work closely with you to create the perfect outdoor living space. Our comprehensive landscaping services include soil preparation, drainage solutions, planting schemes, and ongoing garden care to ensure your landscape thrives for years to come.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
         </div>
-    </section>
+        <div class="cs-image-group">
+            <!--Top Left Image-->
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping1.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping1.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping1.jpg" alt="backyard" width="229" height="352">
+            </picture>
+            <!--Top Right Image-->
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping2.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping2.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping3.jpg" alt="backyard" width="390" height="352">
+            </picture>
+            <!--Bottom Image-->
+            <picture class="cs-picture cs-picture3">
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping3.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping3.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/landscaping3.jpg" alt="backyard" width="649" height="227">
+            </picture>
+        </div>
+    </div>
+</section>
+                                
 
     {% include 'sections/cta.html' %}
 
