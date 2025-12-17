@@ -1,7 +1,7 @@
 {
-    "name": "Intermediate-Website-Kit-SASS",
+    "name": "Monkstown-Paving-and-Landscaping",
     "version": "2.0.1",
-    "description": "The official CodeStitch Intermediate kit, featuring 11ty, Decap CMS and SASS - all set up for you! Perfect for websites of all sizes.",
+    "description": "Monkstown Paving and Landscaping | Paving and Landscaping in Dublin, Wicklow, Kildare, and Louth",
     "main": "index.js",
     "scripts": {
         "watch:cms": "npx decap-server",
