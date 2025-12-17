@@ -161,7 +161,7 @@
         color: var(--primary);
     }
     body.dark-mode #services-1176 .cs-topper {
-        color: var(--primary);
+        color: var(--primaryLight);
     }
     body.dark-mode #services-1176 .cs-title,
     body.dark-mode #services-1176 .cs-text,
@@ -440,7 +440,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode #gallery-1152 .cs-topper {
-        color: var(--secondary);
+        color: var(--primaryLight);
     }
     body.dark-mode #gallery-1152 .cs-title {
         color: var(--bodyTextColorWhite);

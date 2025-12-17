@@ -17,7 +17,7 @@
 @media only screen and (min-width: 0rem) {
     #sbs-1285 {
         padding: var(--sectionPadding);
-        padding-top: 8rem;
+        padding-top: 10rem;
         padding-bottom: 3rem;
         background-color: var(--superLight);
         overflow: hidden;
@@ -129,6 +129,7 @@
             border-radius: calc(16 / 16 * 1em);
             overflow: hidden;
             position: absolute;
+            z-index: 1;
 
             img {
                 width: 100%;
@@ -190,7 +191,7 @@
             width: 100vw;
             height: 150%;
             position: absolute;
-            bottom: 0;
+            bottom: -45%;
             left: 50%;
             z-index: -1;
             /* changes at desktop */
@@ -201,7 +202,8 @@
                 height: 100%;
                 object-fit: cover;
                 position: absolute;
-                top: 0;
+                /* 60px on narrow screens, scales up to ~120px as screen widens */
+                top: clamp(3.75rem, 10vw, 7.5rem);
                 left: 0;
             }
         }
@@ -211,8 +213,8 @@
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #sbs-1285 {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
+        padding-top: 9rem;
+        padding-bottom: 6rem;
 
         .cs-container {
             max-width: calc(1280 / 16 * 1rem);
@@ -243,8 +245,12 @@
             width: 110%;
             height: 100%;
             left: 50%;
-            bottom: 50%;
+            bottom: 65%;
             transform: translate(-50%, 50%);
+
+            img {
+                top: 0;
+            }
         }
     }
 }

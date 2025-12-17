@@ -183,10 +183,10 @@
 
             .cs-toc-item {
                 &.cs-active {
-                    border-color: var(--secondary);
+                    border-color: var(--primaryLight);
 
                     .cs-toc-link {
-                        color: var(--secondary);
+                        color: var(--primaryLight);
                     }
                 }
             }
@@ -500,7 +500,7 @@
             a:not(.cs-button-solid) {
                 text-decoration: underline;
                 font-size: inherit;
-                color: var(--secondary);
+                color: var(--primaryLight);
             }
 
             .cs-button-solid {
