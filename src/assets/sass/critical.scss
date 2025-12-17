@@ -39,6 +39,8 @@
             text-align: left;
             width: 100%;
             max-width: calc(522 / 16 * 1rem);
+            /* Scales from ~2.25rem on narrow screens to ~2.75rem on wider mobiles, removed at 576px+ */
+            padding-left: clamp(2.25rem, calc(1rem + 5vw), 2.75rem);
             display: flex;
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
@@ -210,6 +212,15 @@
     }
 }
 
+/* Tablet - 576px */
+@media only screen and (min-width: 36rem) {
+    #sbs-1285 {
+        .cs-content {
+            padding-left: 0;
+        }
+    }
+}
+
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #sbs-1285 {
@@ -221,7 +232,13 @@
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            padding-left: calc(88 / 16 * 1rem);
+            padding-right: 3rem;
+            /* prevents padding and border from affecting height and width */
+            box-sizing: border-box;
         }
+
+        
 
         .cs-content {
             padding: calc(100 / 16 * 1rem) 0;
@@ -247,7 +264,7 @@
             width: 110%;
             height: 100%;
             left: 50%;
-            bottom: 65%;
+            bottom: 50%;
             transform: translate(-50%, 50%);
 
             img {
@@ -267,9 +284,9 @@
         }
 
         .cs-waves-wrapper {
-            width: calc(692 / 16 * 1rem);
+            width: calc(640 / 16 * 1rem);
             height: initial;
-            left: calc(-88 / 16 * 1rem);
+            left: calc(-65 / 16 * 1rem);
             top: 0;
             bottom: 0;
             transform: none;
