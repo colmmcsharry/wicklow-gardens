@@ -8,7 +8,7 @@ permalink: "/driveways-service/"
 
 {% block head %}
     <link rel="preload" as="image" href="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/individual-service.css">
 {% endblock %}
 
 {% block body %}
@@ -36,27 +36,44 @@ permalink: "/driveways-service/"
         </picture>
     </div>
 
-    <section id="RPsbs-313">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Driveway Installation</span>
-                <h2 class="cs-title">Professional Driveway Installation in Dublin, Wicklow, Kildare & Louth</h2>
-                <p class="cs-text">
-                    Transform your entrance with a stunning paved driveway installed by our highly skilled team. We provide professional driveway installation using only the best materials, ensuring your new drive will serve you and your family for many years to come. Our service covers Dublin, Wicklow, Kildare, and Louth, bringing expert craftsmanship to properties throughout the region.
-                </p>
-                <p class="cs-text">
-                    A well-designed driveway not only enhances your property's appearance but also adds significant value. We offer various driveway options including block paving, tarmac, and imprinted concrete, each with its own benefits. Whether you're in Dublin city, the coastal areas of Wicklow, or the countryside of Kildare and Louth, we can recommend the best solution for your property and budget.
-                </p>
-                <p class="cs-text">
-                    Our driveway installation process begins with a thorough site assessment, taking into account drainage, slope, and existing conditions. We understand the importance of proper base preparation, especially in areas like Wicklow and Louth where ground conditions can vary. Our team ensures your driveway is built to last, with proper drainage and a solid foundation that prevents cracking and settling.
-                </p>
-                <p class="cs-text">
-                    We work closely with homeowners across Dublin, Wicklow, Kildare, and Louth to create driveways that complement their homes and meet their practical needs. From compact city driveways in Dublin to expansive rural driveways in Kildare, we have the expertise and materials to deliver exceptional results. Contact us today for a free quote on your driveway project.
-                </p>
-                <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
-            </div>
+    <section id="sbs-412">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Service</span>
+            <h1 class="cs-title">Professional Driveway Installation in Dublin, Wicklow, Kildare & Louth</h1>
+            <p class="cs-text">
+                Transform your entrance with a stunning paved driveway installed by our highly skilled team. We provide professional driveway installation using only the best materials, ensuring your new drive will serve you and your family for many years to come. Our service covers Dublin, Wicklow, Kildare, and Louth, bringing expert craftsmanship to properties throughout the region.
+            </p>
+            <p class="cs-text">
+                A well-designed driveway not only enhances your property's appearance but also adds significant value. We offer various driveway options including block paving, tarmac, and imprinted concrete, each with its own benefits. Whether you're in Dublin city, the coastal areas of Wicklow, or the countryside of Kildare and Louth, we can recommend the best solution for your property.
+            </p>
+            <p class="cs-text">
+                Our driveway installation process begins with thorough site assessment and proper base preparation. We ensure your driveway is built to last, with proper drainage and a solid foundation that prevents cracking and settling. Contact us today for a free quote on your driveway project.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
         </div>
-    </section>
+        <div class="cs-image-group">
+            <!--Top Left Image-->
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="/assets/images/driveways/driveway1.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/driveways/driveway1.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/driveways/driveway1.jpg" alt="driveway installation" width="229" height="352">
+            </picture>
+            <!--Top Right Image-->
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="/assets/images/driveways/driveway7.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/driveways/driveway7.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/driveways/driveway7.jpg" alt="driveway installation" width="390" height="352">
+            </picture>
+            <!--Bottom Image-->
+            <picture class="cs-picture cs-picture3">
+                <source media="(max-width: 600px)" srcset="/assets/images/before-after-garden/before-after15.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/before-after-garden/before-after15.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/before-after-garden/before-after15.jpg" alt="driveway installation" width="649" height="227">
+            </picture>
+        </div>
+    </div>
+</section>
 
     {% include 'sections/cta.html' %}
 

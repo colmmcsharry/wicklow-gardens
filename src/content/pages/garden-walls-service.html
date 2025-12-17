@@ -8,7 +8,7 @@ permalink: "/garden-walls-service/"
 
 {% block head %}
     <link rel="preload" as="image" href="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/individual-service.css">
 {% endblock %}
 
 {% block body %}
@@ -36,27 +36,44 @@ permalink: "/garden-walls-service/"
         </picture>
     </div>
 
-    <section id="RPsbs-313">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Garden Walls</span>
-                <h2 class="cs-title">Professional Garden Wall Construction in Dublin, Wicklow, Kildare & Louth</h2>
-                <p class="cs-text">
-                    Professional garden wall and pillar construction across Dublin, Wicklow, Kildare, and Louth. We have a professional team of builders on our crew ready to build your new garden walls or pillars. We cover it all from brick, blocks, natural stone walls and pillars - we cover it all. Our skilled craftsmen bring years of experience to every project, ensuring your walls are built to last.
-                </p>
-                <p class="cs-text">
-                    Garden walls serve multiple purposes including privacy, security, boundary definition, and aesthetic enhancement. Whether you need a low decorative wall for a Dublin city garden or a substantial boundary wall for a rural property in Wicklow, Kildare, or Louth, we can create the perfect solution. We work with various materials including traditional brick, concrete blocks, and natural stone, each offering different benefits and aesthetics.
-                </p>
-                <p class="cs-text">
-                    Our team understands the importance of proper foundations and construction techniques, especially crucial in areas with challenging ground conditions like parts of Wicklow and Louth. We ensure all walls are built to proper standards with adequate foundations, correct mortar mixes, and expert craftsmanship. Our builders work throughout Dublin, Kildare, Wicklow, and Louth, bringing local knowledge and professional expertise to every project.
-                </p>
-                <p class="cs-text">
-                    We also offer plastering, rendering, and dashing services to finish your new garden walls, complementing a new garden or matching new walls to the finish on your house. Contact us today for a free quote on your garden wall or pillar project in Dublin, Wicklow, Kildare, or Louth.
-                </p>
-                <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
-            </div>
+    <section id="sbs-412">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Service</span>
+            <h1 class="cs-title">Professional Garden Wall Construction in Dublin, Wicklow, Kildare & Louth</h1>
+            <p class="cs-text">
+                Professional garden wall and pillar construction across Dublin, Wicklow, Kildare, and Louth. We have a professional team of builders ready to build your new garden walls or pillars. We cover it all from brick, blocks, and natural stone walls and pillars. Our skilled craftsmen bring years of experience to every project, ensuring your walls are built to last.
+            </p>
+            <p class="cs-text">
+                Garden walls serve multiple purposes including privacy, security, boundary definition, and aesthetic enhancement. Whether you need a low decorative wall for a Dublin city garden or a substantial boundary wall for a rural property in Wicklow, Kildare, or Louth, we can create the perfect solution. We work with various materials including traditional brick, concrete blocks, and natural stone.
+            </p>
+            <p class="cs-text">
+                We ensure all walls are built to proper standards with adequate foundations, correct mortar mixes, and expert craftsmanship. We also offer plastering, rendering, and dashing services to finish your new garden walls. Contact us today for a free quote on your garden wall or pillar project.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
         </div>
-    </section>
+        <div class="cs-image-group">
+            <!--Top Left Image-->
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="/assets/images/garden-wall/g-wall1.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/garden-wall/g-wall1.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/garden-wall/g-wall1.jpg" alt="garden wall" width="229" height="352">
+            </picture>
+            <!--Top Right Image-->
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="/assets/images/garden-wall/g-wall3.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/garden-wall/g-wall3.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/garden-wall/g-wall3.jpg" alt="garden wall" width="390" height="352">
+            </picture>
+            <!--Bottom Image-->
+            <picture class="cs-picture cs-picture3">
+                <source media="(max-width: 600px)" srcset="/assets/images/garden-wall/g-wall4.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/garden-wall/g-wall4.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/garden-wall/g-wall4.jpg" alt="garden wall" width="649" height="227">
+            </picture>
+        </div>
+    </div>
+</section>
 
     {% include 'sections/cta.html' %}
 

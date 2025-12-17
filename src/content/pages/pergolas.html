@@ -8,7 +8,7 @@ permalink: "/pergolas/"
 
 {% block head %}
     <link rel="preload" as="image" href="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
-    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/individual-service.css">
 {% endblock %}
 
 {% block body %}
@@ -36,27 +36,44 @@ permalink: "/pergolas/"
         </picture>
     </div>
 
-    <section id="RPsbs-313">
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">Pergola Installation</span>
-                <h2 class="cs-title">Custom Pergola Installation in Dublin, Wicklow, Kildare & Louth</h2>
-                <p class="cs-text">
-                    Transform your garden with a custom-built pergola that creates the perfect outdoor living space. We install timber and aluminium pergolas throughout Dublin, Wicklow, Kildare, and Louth, offering free-standing, wall-mounted, and roofed options. Perfect for creating shade and defining outdoor areas, pergolas add both beauty and functionality to your garden.
-                </p>
-                <p class="cs-text">
-                    Our pergola installations are designed to complement your existing garden and home architecture. Whether you're looking for a traditional timber pergola for a Wicklow country garden or a modern aluminium structure for a Dublin city patio, we can create the perfect solution. We work closely with customers across Kildare and Louth to design pergolas that meet their specific needs and style preferences.
-                </p>
-                <p class="cs-text">
-                    Timber pergolas offer a natural, traditional look that blends beautifully with Irish gardens, while aluminium pergolas provide a low-maintenance, modern alternative. We consider factors like exposure to wind and weather when recommending materials, especially important for coastal areas in Wicklow or exposed locations in Louth. Our expert installation ensures your pergola is structurally sound and built to last.
-                </p>
-                <p class="cs-text">
-                    From simple structures that provide partial shade to fully roofed pergolas that create all-weather outdoor rooms, we offer solutions for every garden size and budget. We serve customers across Dublin, Wicklow, Kildare, and Louth, providing free quotes and expert advice. Contact us today to discuss your pergola project and start creating your perfect outdoor space.
-                </p>
-                <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
-            </div>
+    <section id="sbs-412">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Service</span>
+            <h1 class="cs-title">Custom Pergola Installation in Dublin, Wicklow, Kildare & Louth</h1>
+            <p class="cs-text">
+                Transform your garden with a custom-built pergola that creates the perfect outdoor living space. We install timber and aluminium pergolas throughout Dublin, Wicklow, Kildare, and Louth, offering free-standing, wall-mounted, and roofed options. Perfect for creating shade and defining outdoor areas, pergolas add both beauty and functionality to your garden.
+            </p>
+            <p class="cs-text">
+                Our pergola installations are designed to complement your existing garden and home architecture. Whether you're looking for a traditional timber pergola for a Wicklow country garden or a modern aluminium structure for a Dublin city patio, we can create the perfect solution. Timber pergolas offer a natural look while aluminium provides a low-maintenance, modern alternative.
+            </p>
+            <p class="cs-text">
+                From simple structures that provide partial shade to fully roofed pergolas that create all-weather outdoor rooms, we offer solutions for every garden size and budget. Contact us today to discuss your pergola project and start creating your perfect outdoor space.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
         </div>
-    </section>
+        <div class="cs-image-group">
+            <!--Top Left Image-->
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="/assets/images/pergola-garden/pergola1.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/pergola-garden/pergola1.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/pergola-garden/pergola1.jpg" alt="pergola" width="229" height="352">
+            </picture>
+            <!--Top Right Image-->
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="/assets/images/pergola-garden/pergola3.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/pergola-garden/pergola3.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/pergola-garden/pergola3.jpg" alt="pergola" width="390" height="352">
+            </picture>
+            <!--Bottom Image-->
+            <picture class="cs-picture cs-picture3 pergola-3-image">
+                <source media="(max-width: 600px)" srcset="/assets/images/pergola-garden/pergola5.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/pergola-garden/pergola5.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/pergola-garden/pergola5.jpg" alt="pergola" width="649" height="227">
+            </picture>
+        </div>
+    </div>
+</section>
 
     {% include 'sections/cta.html' %}
 
