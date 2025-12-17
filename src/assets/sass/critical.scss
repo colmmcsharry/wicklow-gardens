@@ -39,8 +39,9 @@
             text-align: left;
             width: 100%;
             max-width: calc(522 / 16 * 1rem);
-            /* Scales from ~2.25rem on narrow screens to ~2.75rem on wider mobiles, removed at 576px+ */
-            padding-left: clamp(2.25rem, calc(1rem + 5vw), 2.75rem);
+            /* Scales from ~1.5rem on narrow screens to ~2rem on wider mobiles, removed at 576px+ */
+            padding-left: clamp(1.5rem, calc(0.25rem + 5vw), 2rem);
+            padding-right: 12px;
             display: flex;
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
