@@ -39,7 +39,7 @@ permalink: "/garden-overhaul/"
                 <h2 class="cs-title">Complete Garden Renovations</h2>
             </div>
             <div class="cs-image-group" id="gallery-masonry">
-                {% set overhaul_numbers = [1,2,4,5,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,53,54,55] %}
+                {% set overhaul_numbers = [1,4,8,9,16,18,20,21,22,23,24,25,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,53,54,55,2,5,10,11,12,13,14,17,15,26,19] %}
                 {% for num in overhaul_numbers %}
                     <picture class="cs-picture">
                         <source media="(max-width: 600px)" srcset="/assets/images/garden-overhaul/overhaul{{ num }}.jpg">
@@ -56,8 +56,7 @@ permalink: "/garden-overhaul/"
                         new Masonry(elem, {
                             itemSelector: '.cs-picture',
                             gutter: 20,
-                            percentPosition: true,
-                            horizontalOrder: true
+                            percentPosition: true
                         });
                     });
                 });
