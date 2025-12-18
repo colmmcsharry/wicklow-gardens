@@ -88,7 +88,10 @@
                 </a>
             </li>
             <li class="cs-contact-li">
-                <a class="cs-contact-link" href="tel:{{ client.phoneForTel }}">{{ client.phoneFormatted }}</a>
+                <a class="cs-contact-link cs-phone" href="tel:{{ client.phoneForTel }}">
+                    <img src="/assets/images/phone-call-white-icon.png" alt="" width="16" height="16" style="vertical-align: middle; margin-right: 6px;" aria-hidden="true">
+                    {{ client.phoneFormatted }}
+                </a>
             </li>
             <li class="cs-contact-li">
                 <a class="cs-contact-link" href="mailto:{{ client.email }}">{{ client.email }}</a>
