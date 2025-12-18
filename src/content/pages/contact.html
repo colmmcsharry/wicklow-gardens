@@ -72,7 +72,7 @@ permalink: "/contact/"
                         <input required type="text" id="phone-265" name="phone" placeholder="Phone">
                     </label>
                     <label>
-                        How Did You Find Us
+                        How Did You Find Us (Optional)
                         <input type="text" id="find-265" name="find-us" placeholder="How did you find us?">
                     </label>
                     <label class="cs-label-message">
@@ -93,13 +93,13 @@ permalink: "/contact/"
                     {{ client.phoneFormatted }}
                 </a>
                 <!--Address-->
-                <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{ client.address.mapLink }}">
+                <!-- <span class="cs-header">Address</span>
+                <p class="cs-link" href="{{ client.address.mapLink }}">
                     {{ client.address.lineOne }}, <br>
                     {{ client.address.lineTwo }}, <br>
                     {{ client.address.city }}, {{ client.address.state }}
                     {{ client.address.zip }}
-                </a>
+                </a> -->
                 <!-- Background Image-->
                 <picture class="cs-bg-picture">
                     <!--Mobile Image-->
