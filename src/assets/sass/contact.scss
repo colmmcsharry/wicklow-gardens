@@ -197,6 +197,18 @@
             }
         }
 
+        .cs-phone-contact {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--primary);
+            padding: 10px 20px;
+            border-radius: 6px;
+            white-space: nowrap;
+            width: fit-content;
+            justify-content: center;
+        }
+
         .cs-block {
             /* sends second address line to the bottom on its own line */
             display: block;
