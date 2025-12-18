@@ -22,6 +22,13 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <link rel="stylesheet" href="/assets/css/local.css" />
     {% endif %}
 
+    <!-- Preload above-the-fold images for better LCP -->
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 432, height: 352 }) | avif %}" />
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 432, height: 476 }) | avif %}" />
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 432, height: 476 }) | avif %}" />
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 524, height: 580 }) | avif %}" />
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 432, height: 476 }) | avif %}" />
+
     <!-- To ensure proper validation, prevent errors, and encourage developers to check, schema's are an opt-in feature. They're very bespoke and requires some customising  -->
     <!-- Uncomment the code below to enable Structured Data, and test it when you deploy to Netlify - https://developers.google.com/search/docs/appearance/structured-data -->
     <!-- {% include "components/home-schema.html" %} -->
@@ -53,45 +60,93 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <div class="cs-image-group">
             <picture class="cs-picture cs-picture1">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/driveways/driveway7.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/driveways/driveway7.jpg">
-                <img loading="eager" decoding="async" src="/assets/images/driveways/driveway7.jpg" alt="driveway" width="203" height="203">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 432, height: 352 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 432, height: 352 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 432, height: 352 }) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 748, height: 616 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 748, height: 616 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 748, height: 616 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 976, height: 800 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 976, height: 800 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 976, height: 800 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 976, height: 800 }) | jpeg %}" alt="driveway" width="244" height="200" decoding="async">
             </picture>
             <picture class="cs-picture cs-picture2">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/before-after-garden/before-after20.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/before-after-garden/before-after20.jpg">
-                <img loading="eager" decoding="async" src="/assets/images/before-after-garden/before-after20.jpg" alt="garden before and after" width="207" height="207">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 432, height: 476 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 432, height: 476 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 432, height: 476 }) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 748, height: 828 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 748, height: 828 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 748, height: 828 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 976, height: 1080 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 976, height: 1080 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 976, height: 1080 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 976, height: 1080 }) | jpeg %}" alt="garden before and after" width="244" height="270" decoding="async">
             </picture>
             <picture class="cs-picture cs-picture3">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/pergola-garden/pergola1.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/pergola-garden/pergola1.jpg">
-                <img loading="eager" decoding="async" src="/assets/images/pergola-garden/pergola1.jpg" alt="garden before and after" width="214" height="214">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 432, height: 476 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 432, height: 476 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 432, height: 476 }) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 748, height: 828 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 748, height: 828 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 748, height: 828 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 976, height: 1080 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 976, height: 1080 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 976, height: 1080 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 976, height: 1080 }) | jpeg %}" alt="garden before and after" width="244" height="270" decoding="async">
             </picture>
             <picture class="cs-picture cs-picture4">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/before-after-garden/before-after26.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/before-after-garden/before-after26.jpg">
-                <img loading="eager" decoding="async" src="/assets/images/before-after-garden/before-after26.jpg" alt="garden before and after" width="223" height="223">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 524, height: 580 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 524, height: 580 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 524, height: 580 }) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 928, height: 1028 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 928, height: 1028 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 928, height: 1028 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 1216, height: 1348 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 1216, height: 1348 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 1216, height: 1348 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 1216, height: 1348 }) | jpeg %}" alt="garden before and after" width="304" height="337" decoding="async">
             </picture>
             <picture class="cs-picture cs-picture5">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/shiny-slabs/shiny-slabs7.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/shiny-slabs/shiny-slabs7.jpg">
-                <img loading="eager" decoding="async" src="/assets/images/shiny-slabs/shiny-slabs7.jpg" alt="polished paving slabs" width="287" height="287">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 432, height: 476 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 432, height: 476 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 432, height: 476 }) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 748, height: 828 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 748, height: 828 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 748, height: 828 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 976, height: 1080 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 976, height: 1080 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 976, height: 1080 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 976, height: 1080 }) | jpeg %}" alt="polished paving slabs" width="244" height="270" decoding="async">
             </picture>
             <picture class="cs-picture cs-picture6">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/garden-wall/g-wall3.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/garden-wall/g-wall3.jpg">
-                <img loading="eager" decoding="async" src="/assets/images/garden-wall/g-wall3.jpg" alt="garden wall" width="203" height="203">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 432, height: 336 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 432, height: 336 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 432, height: 336 }) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 748, height: 584 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 748, height: 584 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 748, height: 584 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 976, height: 760 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 976, height: 760 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 976, height: 760 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 976, height: 760 }) | jpeg %}" alt="garden wall" width="244" height="190" loading="lazy" decoding="async">
             </picture>
             <!--Stripe background-->
             <picture class="cs-waves-wrapper">
@@ -184,33 +239,83 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <div class="cs-gallery">
             <!--Picture 1-->
             <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="/assets/images/garden-slabs/garden-slabs5.jpg">
-                <source media="(min-width: 601px)" srcset="/assets/images/garden-slabs/garden-slabs5.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/garden-slabs/garden-slabs5.jpg" alt="garden paving slabs" width="272" height="320">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs5.jpg" | resize({ width: 1152, height: 1040 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs5.jpg" | resize({ width: 1152, height: 1040 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs5.jpg" | resize({ width: 1152, height: 1040 }) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs5.jpg" | resize({ width: 1216, height: 1280 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs5.jpg" | resize({ width: 1216, height: 1280 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs5.jpg" | resize({ width: 1216, height: 1280 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs5.jpg" | resize({ width: 960, height: 1280 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs5.jpg" | resize({ width: 960, height: 1280 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs5.jpg" | resize({ width: 960, height: 1280 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/garden-slabs/garden-slabs5.jpg" | resize({ width: 960, height: 1280 }) | jpeg %}" alt="garden paving slabs" width="240" height="320" loading="lazy" decoding="async">
             </picture>
             <!--Picture 2-->
             <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="/assets/images/garden-slabs/garden-slabs1.jpg">
-                <source media="(min-width: 601px)" srcset="/assets/images/garden-slabs/garden-slabs1.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/garden-slabs/garden-slabs1.jpg" alt="garden paving slabs" width="272" height="320">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs1.jpg" | resize({ width: 1152, height: 1040 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs1.jpg" | resize({ width: 1152, height: 1040 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs1.jpg" | resize({ width: 1152, height: 1040 }) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs1.jpg" | resize({ width: 1216, height: 1280 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs1.jpg" | resize({ width: 1216, height: 1280 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs1.jpg" | resize({ width: 1216, height: 1280 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs1.jpg" | resize({ width: 960, height: 1280 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs1.jpg" | resize({ width: 960, height: 1280 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/garden-slabs/garden-slabs1.jpg" | resize({ width: 960, height: 1280 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/garden-slabs/garden-slabs1.jpg" | resize({ width: 960, height: 1280 }) | jpeg %}" alt="garden paving slabs" width="240" height="320" loading="lazy" decoding="async">
             </picture>
             <!--Picture 3-->
             <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="/assets/images/pergola-garden/pergola1.jpg">
-                <source media="(min-width: 601px)" srcset="/assets/images/pergola-garden/pergola1.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/pergola-garden/pergola1.jpg" alt="pergola installation" width="272" height="320">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 1152, height: 1040 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 1152, height: 1040 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 1152, height: 1040 }) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 1216, height: 1280 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 1216, height: 1280 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 1216, height: 1280 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 960, height: 1280 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 960, height: 1280 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 960, height: 1280 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 960, height: 1280 }) | jpeg %}" alt="pergola installation" width="240" height="320" loading="lazy" decoding="async">
             </picture>
             <!--Picture 4-->
             <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="/assets/images/shiny-slabs/shiny-slabs7.jpg">
-                <source media="(min-width: 601px)" srcset="/assets/images/shiny-slabs/shiny-slabs7.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/shiny-slabs/shiny-slabs7.jpg" alt="polished paving slabs" width="272" height="320">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 1152, height: 1040 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 1152, height: 1040 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 1152, height: 1040 }) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 1856, height: 1280 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 1856, height: 1280 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 1856, height: 1280 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 960, height: 1280 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 960, height: 1280 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 960, height: 1280 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 960, height: 1280 }) | jpeg %}" alt="polished paving slabs" width="240" height="320" loading="lazy" decoding="async">
             </picture>
             <!--Picture 5-->
             <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="/assets/images/before-after-garden/before-after16.jpg">
-                <source media="(min-width: 601px)" srcset="/assets/images/before-after-garden/before-after16.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/before-after-garden/before-after16.jpg" alt="garden transformation" width="272" height="320">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after16.jpg" | resize({ width: 1152, height: 1040 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after16.jpg" | resize({ width: 1152, height: 1040 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after16.jpg" | resize({ width: 1152, height: 1040 }) | jpeg %}" type="image/jpeg">
+                <!--Tablet Image-->
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after16.jpg" | resize({ width: 1856, height: 1280 }) | avif %}" type="image/avif">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after16.jpg" | resize({ width: 1856, height: 1280 }) | webp %}" type="image/webp">
+                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after16.jpg" | resize({ width: 1856, height: 1280 }) | jpeg %}" type="image/jpeg">
+                <!--Desktop Image-->
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after16.jpg" | resize({ width: 960, height: 1280 }) | avif %}" type="image/avif">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after16.jpg" | resize({ width: 960, height: 1280 }) | webp %}" type="image/webp">
+                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after16.jpg" | resize({ width: 960, height: 1280 }) | jpeg %}" type="image/jpeg">
+                <img src="{% getUrl "/assets/images/before-after-garden/before-after16.jpg" | resize({ width: 960, height: 1280 }) | jpeg %}" alt="garden transformation" width="240" height="320" loading="lazy" decoding="async">
             </picture>
         </div>
     </div>
