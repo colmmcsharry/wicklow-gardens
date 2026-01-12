@@ -1492,6 +1492,14 @@
 			}
 		}
 
+		.cs-credit {
+			font-size: calc(16 / 16 * 1rem);
+			color: var(--bodyTextColorWhite);
+			opacity: 0.7;
+			text-align: center;
+			margin-top: 3rem;
+		}
+
 		.cs-contact-link {
 			font-size: calc(16 / 16 * 1rem);
 			text-decoration: none;
