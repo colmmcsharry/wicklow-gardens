@@ -184,6 +184,16 @@
     }
 }
 
+/* Mobile only — nudge hero copy slightly lower (keep CTA above the V cutout) */
+@media only screen and (max-width: 47.9375rem) {
+    #hero-81 {
+        /* ~184px–232px — a bit more space under the nav so copy sits nearer center */
+        padding-top: clamp(11.5rem, 32vw, 14.5rem);
+        /* Slightly less bottom pad so the button stays in the dark hero area */
+        padding-bottom: clamp(9.5rem, 26vw, 13rem);
+    }
+}
+
 /* Desktop - 1300px (To make image background parallax) */
 @media only screen and (min-width: 81.25rem) {
     #hero-81 {
