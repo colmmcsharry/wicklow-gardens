@@ -1,0 +1,77 @@
+---
+title: "Hedge Trimming Dublin & Wicklow | Wicklow Gardening and Landscaping"
+description: "Hedge cutting and shaping across Dublin, Wicklow, Kildare, and Louth. Neat boundaries and healthier growth."
+permalink: "/hedge-trimming/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="stylesheet" href="/assets/css/individual-service.css">
+{% endblock %}
+
+{% block body %}
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Hedge Trimming</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/services/" class="cs-link">Services</a>
+                <a href="/hedge-trimming/" class="cs-link cs-active">Hedge Trimming</a>
+            </div>
+        </div>
+        <picture class="cs-background">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="Hedge Trimming" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <section id="sbs-412">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Our Service</span>
+            <h1 class="cs-title">Hedge Trimming & Shaping in Dublin, Wicklow, Kildare & Louth</h1>
+            <p class="cs-text">
+                Overgrown hedges can make a garden feel neglected. Our hedge trimming service restores clean lines, improves light, and keeps boundaries tidy and manageable.
+            </p>
+            <p class="cs-text">
+                We cut and shape common Irish hedges with care for plant health, then clear away the cuttings so you are left with a neat finish.
+            </p>
+            <p class="cs-text">
+                Book a one-off cut or add hedge work to a regular maintenance plan. Serving homes across Dublin, Wicklow, Kildare, and Louth.
+            </p>
+            <a href="/contact/" class="cs-button-solid">Get Your Free Quote</a>
+        </div>
+        <div class="cs-image-group">
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="/assets/images/before-after-garden/before-after1.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/before-after-garden/before-after1.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/before-after-garden/before-after1.jpg" alt="Hedge Trimming" width="229" height="352">
+            </picture>
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="/assets/images/before-after-garden/before-after10.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/before-after-garden/before-after10.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/before-after-garden/before-after10.jpg" alt="Hedge Trimming" width="390" height="352">
+            </picture>
+            <picture class="cs-picture cs-picture3">
+                <source media="(max-width: 600px)" srcset="/assets/images/before-after-garden/before-after11.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/before-after-garden/before-after11.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/before-after-garden/before-after11.jpg" alt="Hedge Trimming" width="649" height="227">
+            </picture>
+        </div>
+    </div>
+</section>
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}

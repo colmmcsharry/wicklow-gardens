@@ -182,13 +182,12 @@
 				menu.inert = false;
 			} else if (event.type === "mouseleave") {
 				// Only set inert=true if mouse is leaving the entire dropdown area
-				// Use setTimeout to allow mouseleave/mouseenter events to complete
+				// Delay enough to cover the button → menu transition
 				setTimeout(() => {
-					// Check if mouse is still over the dropdown or its menu
 					if (!dropdown.matches(":hover")) {
 						menu.inert = true;
 					}
-				}, 1);
+				}, 100);
 			}
 		},
 	};

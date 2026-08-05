@@ -1,8 +1,8 @@
 module.exports = {
     name: "Wicklow Gardening and Landscaping",
-    email: "monkstownpavingandlandscaping@gmail.com",
-    phoneForTel: "0857869725",
-    phoneFormatted: "(085) 786-9725",
+    email: "wicklowgardeningandlandscaping@gmail.com",
+    phoneForTel: "+353858111125",
+    phoneFormatted: "+353 85 811 1125",
     address: {
         lineOne: "First Address Line",
         lineTwo: "Second Address Line",

@@ -1,21 +1,17 @@
 ---
 title: "Services | Wicklow Gardening and Landscaping"
-description: "Professional paving and landscaping services across Dublin, Wicklow, Kildare, and Louth. Driveways, patios, garden walls, pergolas and more."
+description: "Professional gardening and landscaping services across Dublin, Wicklow, Kildare, and Louth. Lawn care, planting, maintenance, and more."
 permalink: "/services/"
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/driveways/driveway1.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
     <link rel="stylesheet" href="/assets/css/services.css">
 {% endblock %}
 
 {% block body %}
-
-    <!-- ============================================ -->
-    <!--                   Banner                     -->
-    <!-- ============================================ -->
 
     <div id="banner-310">
         <div class="cs-container">
@@ -25,48 +21,35 @@ permalink: "/services/"
                 <a href="/services/" class="cs-link cs-active">Services</a>
             </div>
         </div>
-        <!--Background Image-->
         <picture class="cs-background">
-            <!--Mobile Image-->
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
             <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <!--Tablet Image-->
             <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
             <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
             <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <!--Desktop Image-->
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="paving services" width="1920" height="482" loading="eager" decoding="async">
+            <img src="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="gardening services" width="1920" height="482" loading="eager" decoding="async">
         </picture>
     </div>
-
-    <!-- ============================================ -->
-    <!--                 Services Content              -->
-    <!-- ============================================ -->
 
     <section id="services-1479">
         <div class="cs-container">
             <div class="cs-content">
                 <span class="cs-topper">Our Services</span>
-                <h2 class="cs-title">Professional Landscaping & Paving Services</h2>
+                <h2 class="cs-title">Professional Landscaping & Gardening Services</h2>
                 <p class="cs-text">
-                    From driveways to complete garden overhauls, we offer a comprehensive range of landscaping and paving services across Dublin, Wicklow, Kildare, and Louth.
+                    From regular maintenance to full garden transformations, we offer a practical range of gardening and landscaping services across Dublin, Wicklow, Kildare, and Louth.
                 </p>
                 <br>
                 <p class="cs-text">
                     Click a service below to learn more.
                 </p>
             </div>
-            
         </div>
     </section>
-
-    <!-- ============================================ -->
-<!--                    Services                  -->
-<!-- ============================================ -->
 
 <section id="services-1304">
     <div class="cs-container">
@@ -74,141 +57,139 @@ permalink: "/services/"
             <li class="cs-item">
                 <a href="/landscaping/" class="cs-link">
                     <div class="cs-icon-wrapper">
-                        <img class="cs-icon othergreen" src="/assets/images/gardening.png" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                        <img class="cs-icon othergreen" src="/assets/images/landscape.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
                     </div>
                     <h3 class="cs-h3">Landscaping</h3>
                     <p class="cs-item-text">
-                        Complete garden design and transformation services. From raised beds to turf lawns, we handle all aspects of landscape design.
+                        Complete garden design and transformation — beds, lawns, features, and outdoor spaces tailored to your home.
                     </p>
                 </a>
             </li>
             <li class="cs-item">
-                <a href="/porcelain-paving/" class="cs-link">
+                <a href="/garden-maintenance/" class="cs-link">
                     <div class="cs-icon-wrapper">
-                        <img class="cs-icon othergreen" src="/assets/images/floor.png" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                        <img class="cs-icon othergreen" src="/assets/images/gardening-icon.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
                     </div>
-                    <h3 class="cs-h3">Porcelain Paving</h3>
+                    <h3 class="cs-h3">Garden Maintenance</h3>
                     <p class="cs-item-text">
-                        Durable and stylish porcelain paving that's resistant to stains and weather. Premium quality with a range of styles to suit all tastes.
+                        Regular or one-off visits for weeding, pruning, tidying, and seasonal care that keeps gardens looking their best.
                     </p>
                 </a>
             </li>
             <li class="cs-item">
-                <a href="/block-paving/" class="cs-link">
+                <a href="/lawn-care/" class="cs-link">
                     <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/brickwall.png" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                        <img class="cs-icon" src="/assets/images/forest.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
                     </div>
-                    <h3 class="cs-h3">Block Paving</h3>
+                    <h3 class="cs-h3">Lawn Care</h3>
                     <p class="cs-item-text">
-                        High-quality block paving installation for driveways, paths, and patios. Durable, attractive, and built to last for many years.
+                        Mowing, feeding, moss control, and scarifying for healthier, greener lawns throughout the year.
                     </p>
                 </a>
             </li>
             <li class="cs-item">
-                <a href="/driveways-service/" class="cs-link">
+                <a href="/hedge-trimming/" class="cs-link">
                     <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/driveway.png" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                        <img class="cs-icon" src="/assets/images/gardening.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
                     </div>
-                    <h3 class="cs-h3">Driveways</h3>
+                    <h3 class="cs-h3">Hedge Trimming</h3>
                     <p class="cs-item-text">
-                        Professional driveway installation using only the best materials. Transform your entrance with a stunning paved driveway.
+                        Neat hedge cutting and shaping with cuttings cleared away — tidy boundaries and healthier growth.
                     </p>
                 </a>
             </li>
             <li class="cs-item">
-                <a href="/fencing/" class="cs-link">
+                <a href="/planting/" class="cs-link">
                     <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/fence.png" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                        <img class="cs-icon" src="/assets/images/gardening-icon.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
                     </div>
-                    <h3 class="cs-h3">Fencing</h3>
+                    <h3 class="cs-h3">Planting & Borders</h3>
                     <p class="cs-item-text">
-                        Professional fencing installation for privacy, security, and boundary definition. Quality materials and expert craftsmanship.
+                        Beds and borders designed for Irish conditions — colour, structure, and planting that lasts.
                     </p>
                 </a>
             </li>
             <li class="cs-item">
-                <a href="/pergolas/" class="cs-link">
+                <a href="/turf-laying/" class="cs-link">
                     <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/pergola.png" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                        <img class="cs-icon" src="/assets/images/landscape.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
                     </div>
-                    <h3 class="cs-h3">Pergolas</h3>
+                    <h3 class="cs-h3">Turf Laying</h3>
                     <p class="cs-item-text">
-                        Transform your garden with custom-built pergolas. Timber and aluminium options, free-standing or wall-mounted.
+                        Supply and lay quality turf for an instant green lawn, with proper ground prep and aftercare advice.
                     </p>
                 </a>
             </li>
             <li class="cs-item">
-                <a href="/tarmac/" class="cs-link">
+                <a href="/garden-clearance/" class="cs-link">
                     <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/wheelbarrow.png" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                        <img class="cs-icon" src="/assets/images/wheelbarrow.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
                     </div>
-                    <h3 class="cs-h3">Tarmac</h3>
+                    <h3 class="cs-h3">Garden Clearance</h3>
                     <p class="cs-item-text">
-                        Smooth, durable tarmac surfacing for driveways and paths. Professional installation with excellent value and long-lasting results.
+                        Clear overgrown gardens and debris so you have a clean slate for planting or landscaping.
                     </p>
                 </a>
             </li>
             <li class="cs-item">
                 <a href="/patios/" class="cs-link">
                     <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/patio.png" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                        <img class="cs-icon" src="/assets/images/patio.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
                     </div>
                     <h3 class="cs-h3">Patios</h3>
                     <p class="cs-item-text">
-                        Beautifully designed patios to complement your home. Whatever the size or shape, we create the perfect outdoor living space.
+                        Outdoor living spaces designed to complement your home — practical, durable, and built for Irish weather.
                     </p>
                 </a>
             </li>
             <li class="cs-item">
-                <a href="/slabbing/" class="cs-link">
+                <a href="/pergolas/" class="cs-link">
                     <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/floor.png" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                        <img class="cs-icon" src="/assets/images/pergola.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
                     </div>
-                    <h3 class="cs-h3">Slabbing</h3>
+                    <h3 class="cs-h3">Pergolas</h3>
                     <p class="cs-item-text">
-                        Professional garden slab installation for paths, patios, and walkways. Expertly laid with attention to detail and quality finish.
+                        Custom pergolas for shade and structure — a simple way to upgrade outdoor seating areas.
                     </p>
                 </a>
             </li>
             <li class="cs-item">
-                <a href="/imprinted-concrete/" class="cs-link">
+                <a href="/fencing/" class="cs-link">
                     <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/paving.png" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                        <img class="cs-icon" src="/assets/images/fence.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
                     </div>
-                    <h3 class="cs-h3">Imprinted Concrete</h3>
+                    <h3 class="cs-h3">Fencing</h3>
                     <p class="cs-item-text">
-                        Stunning imprinted concrete driveways and patios. Custom patterns and colors to create a unique, decorative finish.
+                        Privacy and boundary fencing installed with quality materials and a clean professional finish.
                     </p>
                 </a>
             </li>
             <li class="cs-item">
                 <a href="/garden-walls-service/" class="cs-link">
                     <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/brick.png" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                        <img class="cs-icon" src="/assets/images/brick.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
                     </div>
                     <h3 class="cs-h3">Garden Walls</h3>
                     <p class="cs-item-text">
-                        Professional garden wall and pillar construction. From brick and blocks to natural stone, our skilled builders cover it all.
+                        Garden walls and pillars for structure, raised beds, and defined outdoor spaces.
                     </p>
                 </a>
             </li>
             <li class="cs-item">
                 <a href="/contact/" class="cs-link">
                     <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/miscellaneous.png" loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                        <img class="cs-icon" src="/assets/images/miscellaneous.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
                     </div>
-                    <h3 class="cs-h3">Extra Services</h3>
+                    <h3 class="cs-h3">Something Else?</h3>
                     <p class="cs-item-text">
-                        If you want something else, just let us know and we can help!
+                        Need a different garden job? Get in touch and we will help where we can.
                     </p>
                 </a>
             </li>
         </ul>
     </div>
 </section>
-                                
 
     {% include 'sections/cta.html' %}
 
 {% endblock %}
-
