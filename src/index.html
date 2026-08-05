@@ -1,5 +1,5 @@
 ---
-title: "Monkstown Paving and Landscaping | Paving and Landscaping in Dublin, Wicklow, Kildare, and Louth"
+title: "Wicklow Gardening and Landscaping | Paving and Landscaping in Dublin, Wicklow, Kildare, and Louth"
 description: "Professional driveway installation, garden paving, and landscape design services across Dublin, Wicklow, Kildare, and Louth. From stunning patios to elegant driveways, we bring over 10 years of expertise to create outdoor spaces that enhance your property's beauty and value. Quality craftsmanship, competitive pricing, and exceptional results guaranteed."
 permalink: "/"
 tags: "sitemap" # content/content.json will make sure that all pages in content/ are marked with a "sitemap" tag, for automatic sitemap generation. As index.html is not in content/, we need to add it here to ensure the root page is included in the sitemap generation
@@ -36,124 +36,52 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
-
-    <!-- ============================================ -->
-<!--                Side By Side                  -->
+<!-- ============================================ -->
+<!--                    Hero                      -->
 <!-- ============================================ -->
 
-<section id="sbs-1285">
+<section id="hero-81">
     <div class="cs-container">
-        <div class="cs-content">
-            <span class="cs-topper">Expert Paving & Landscaping</span>
-            <h1 class="cs-title">Premium Paving & Landscaping in Dublin</h1>
-            <p class="cs-text">
-                Professional driveway installation, garden paving, and landscape design across Dublin, Wicklow, Kildare, and Louth. Over 10 years of expertise creating beautiful outdoor spaces. Quality craftsmanship, competitive pricing, and exceptional results guaranteed.
-            </p>
-            <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid home-phone">
-                <img src="/assets/images/phone-call-white-icon.png" alt="" width="20" height="20" style="vertical-align: middle; margin-right: 8px;" aria-hidden="true">
-                Call Now
-            </a>
-        </div>
-        <div class="cs-image-group">
-            <picture class="cs-picture cs-picture1">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 432, height: 352 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 432, height: 352 }) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 432, height: 352 }) | jpeg %}" type="image/jpeg">
-                <!--Tablet Image-->
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 748, height: 616 }) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 748, height: 616 }) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 748, height: 616 }) | jpeg %}" type="image/jpeg">
-                <!--Desktop Image-->
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 976, height: 800 }) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 976, height: 800 }) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 976, height: 800 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/driveways/driveway7.jpg" | resize({ width: 976, height: 800 }) | jpeg %}" alt="driveway" width="244" height="200" decoding="async">
-            </picture>
-            <picture class="cs-picture cs-picture2">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 432, height: 476 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 432, height: 476 }) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 432, height: 476 }) | jpeg %}" type="image/jpeg">
-                <!--Tablet Image-->
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 748, height: 828 }) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 748, height: 828 }) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 748, height: 828 }) | jpeg %}" type="image/jpeg">
-                <!--Desktop Image-->
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 976, height: 1080 }) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 976, height: 1080 }) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 976, height: 1080 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/before-after-garden/before-after20.jpg" | resize({ width: 976, height: 1080 }) | jpeg %}" alt="garden before and after" width="244" height="270" decoding="async">
-            </picture>
-            <picture class="cs-picture cs-picture3">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 432, height: 476 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 432, height: 476 }) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 432, height: 476 }) | jpeg %}" type="image/jpeg">
-                <!--Tablet Image-->
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 748, height: 828 }) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 748, height: 828 }) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 748, height: 828 }) | jpeg %}" type="image/jpeg">
-                <!--Desktop Image-->
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 976, height: 1080 }) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 976, height: 1080 }) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 976, height: 1080 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/pergola-garden/pergola1.jpg" | resize({ width: 976, height: 1080 }) | jpeg %}" alt="garden before and after" width="244" height="270" decoding="async">
-            </picture>
-            <picture class="cs-picture cs-picture4">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 524, height: 580 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 524, height: 580 }) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 524, height: 580 }) | jpeg %}" type="image/jpeg">
-                <!--Tablet Image-->
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 928, height: 1028 }) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 928, height: 1028 }) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 928, height: 1028 }) | jpeg %}" type="image/jpeg">
-                <!--Desktop Image-->
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 1216, height: 1348 }) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 1216, height: 1348 }) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 1216, height: 1348 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/before-after-garden/before-after26.jpg" | resize({ width: 1216, height: 1348 }) | jpeg %}" alt="garden before and after" width="304" height="337" decoding="async">
-            </picture>
-            <picture class="cs-picture cs-picture5">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 432, height: 476 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 432, height: 476 }) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 432, height: 476 }) | jpeg %}" type="image/jpeg">
-                <!--Tablet Image-->
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 748, height: 828 }) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 748, height: 828 }) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 748, height: 828 }) | jpeg %}" type="image/jpeg">
-                <!--Desktop Image-->
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 976, height: 1080 }) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 976, height: 1080 }) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 976, height: 1080 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/shiny-slabs/shiny-slabs7.jpg" | resize({ width: 976, height: 1080 }) | jpeg %}" alt="polished paving slabs" width="244" height="270" decoding="async">
-            </picture>
-            <picture class="cs-picture cs-picture6">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 432, height: 336 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 432, height: 336 }) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 432, height: 336 }) | jpeg %}" type="image/jpeg">
-                <!--Tablet Image-->
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 748, height: 584 }) | avif %}" type="image/avif">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 748, height: 584 }) | webp %}" type="image/webp">
-                <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 748, height: 584 }) | jpeg %}" type="image/jpeg">
-                <!--Desktop Image-->
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 976, height: 760 }) | avif %}" type="image/avif">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 976, height: 760 }) | webp %}" type="image/webp">
-                <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 976, height: 760 }) | jpeg %}" type="image/jpeg">
-                <img src="{% getUrl "/assets/images/garden-wall/g-wall3.jpg" | resize({ width: 976, height: 760 }) | jpeg %}" alt="garden wall" width="244" height="190" loading="lazy" decoding="async">
-            </picture>
-            <!--Stripe background-->
-            <picture class="cs-waves-wrapper">
-                <img class="cs-waves" loading="eager" decoding="async" src="/assets/images/green-waves.svg" alt="stripes" width="650" height="933" aria-hidden="true">
-            </picture>
-        </div>
+        <h1 class="cs-title">Garden & Landscaping Experts in Wicklow</h1>
+        <p class="cs-text">
+            Experienced garden and landscaping team in Wicklow and surrounding areas. We offer a  range of services to help you create the perfect outdoor space for your home.
+        </p>
+        <a href="" class="cs-button-solid">Request Appointment</a>
     </div>
+
+    <!-- Background Image -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen-m.jpg">
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen.jpg">
+        <img fetchpriority="high" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen.jpg" alt="kitchen" width="2250" height="1500" aria-hidden="true">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="h-services-81">
+    <ul class="cs-card-group">
+        <li class="cs-item">
+            <picture class="cs-icon">
+                <img loading="lazy" decoding="async" src="/assets/svgs/gardening.svg" alt="gardening" width="52" height="52" aria-hidden="true">
+            </picture>
+            <h2 class="cs-title">Gardening</h2>
+            <p class="cs-text">
+                From planting and pruning to seasonal care, we keep your gardens healthy, tidy, and looking their best year-round.
+            </p>
+        </li>
+        <li class="cs-item">
+            <picture class="cs-icon">
+                <img loading="lazy" decoding="async" src="/assets/svgs/landscaping.svg" alt="landscaping" width="52" height="52" aria-hidden="true">
+            </picture>
+            <h2 class="cs-title">Landscaping</h2>
+            <p class="cs-text">
+                Expert design and installation for outdoor spaces — lawns, borders, features, and hard landscaping tailored to your home.
+            </p>
+        </li>
+    </ul>
 </section>
                                 
 
@@ -382,7 +310,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 <li class="cs-item">
                     <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
-                        We're absolutely delighted with the work Chris and the team at Monkstown Paving and Landscaping did on our driveway and front garden. From the first call to the final clean-up, everything was handled professionally. Chris explained all the options clearly and kept us informed throughout the job. The finish is top quality and we've had loads of compliments from neighbours. Would highly recommend.
+                        We're absolutely delighted with the work Chris and the team at Wicklow Gardening and Landscaping did on our driveway and front garden. From the first call to the final clean-up, everything was handled professionally. Chris explained all the options clearly and kept us informed throughout the job. The finish is top quality and we've had loads of compliments from neighbours. Would highly recommend.
                     </p>
                     <div class="cs-info">
                         <div class="cs-flex-group">
@@ -396,7 +324,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
                 <li class="cs-item">
                     <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
-                        Chris and his crew transformed our back garden with a new patio and landscaping. The lads were punctual, hardworking and very tidy. You can tell they take real pride in their work. Chris was easy to deal with and made sure everything was finished exactly as discussed. We're delighted with the end result and wouldn't hesitate to use Monkstown Paving and Landscaping again.
+                        Chris and his crew transformed our back garden with a new patio and landscaping. The lads were punctual, hardworking and very tidy. You can tell they take real pride in their work. Chris was easy to deal with and made sure everything was finished exactly as discussed. We're delighted with the end result and wouldn't hesitate to use Wicklow Gardening and Landscaping again.
                     </p>
                     <div class="cs-info">
                         <div class="cs-flex-group">

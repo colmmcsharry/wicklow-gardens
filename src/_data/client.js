@@ -1,5 +1,5 @@
 module.exports = {
-    name: "Monkstown Paving and Lanscaping",
+    name: "Wicklow Gardening and Landscaping",
     email: "monkstownpavingandlandscaping@gmail.com",
     phoneForTel: "0857869725",
     phoneFormatted: "(085) 786-9725",

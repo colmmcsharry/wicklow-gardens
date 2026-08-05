@@ -1,7 +1,7 @@
 {
-    "name": "Monkstown-Paving-and-Landscaping",
+    "name": "wicklow-gardening-and-landscaping",
     "version": "2.0.1",
-    "description": "Monkstown Paving and Landscaping | Paving and Landscaping in Dublin, Wicklow, Kildare, and Louth",
+    "description": "Wicklow Gardening and Landscaping | Paving and Landscaping in Dublin, Wicklow, Kildare, and Louth",
     "main": "index.js",
     "scripts": {
         "watch:cms": "npx decap-server",
