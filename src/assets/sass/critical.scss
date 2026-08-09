@@ -149,16 +149,30 @@
             /* 46px - 56px */
             line-height: clamp(2.875rem, 5.5vw, 3.5rem);
             text-decoration: none;
+            text-align: center;
             min-width: calc(150 / 16 * 1rem);
             margin: auto;
             padding: 0 calc(24 / 16 * 1rem);
-            color: #1a1a1a;
+            color: #ffffff;
             background-color: var(--primary);
             border-radius: calc(4 / 16 * 1rem);
             display: inline-block;
             position: relative;
             z-index: 1;
             transition: color 0.3s;
+
+            .cs-button-phone {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: calc(8 / 16 * 1rem);
+                white-space: nowrap;
+
+                img {
+                    display: block;
+                    flex-shrink: 0;
+                }
+            }
 
             &:before {
                 content: "";
