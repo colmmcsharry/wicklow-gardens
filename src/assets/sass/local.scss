@@ -52,7 +52,9 @@
         box-sizing: border-box;
         padding: 1.5rem;
         padding-bottom: 2rem;
-        background-color: var(--superLight);
+        /* Solid green cards — distinct from the pale Monkstown-style cards */
+        background-color: var(--primary);
+        border-radius: calc(8 / 16 * 1rem);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -60,26 +62,27 @@
         position: relative;
         z-index: 1;
         transition:
-            box-shadow 0.3s,
-            border-color 0.3s;
+            background-color 0.3s,
+            box-shadow 0.3s;
         text-align: center;
         grid-column: span 12;
         grid-row: span 1;
     }
+    #services-1176 .cs-item:hover {
+        background-color: var(--primaryLight);
+    }
     #services-1176 .cs-item:hover .cs-h3,
     #services-1176 .cs-item:hover .cs-link {
-        color: var(--primary);
+        color: #fff;
     }
-    #services-1176 .cs-item:hover .cs-arrow {
-        filter: hue-rotate(180deg);
-    }
-    /* Circular green background wrapper */
+    /* Circular icon wrapper */
     #services-1176 .cs-icon-wrapper {
         /* Circular container - 64px - 80px */
         width: clamp(4rem, 8vw, 5rem);
         height: clamp(4rem, 8vw, 5rem);
-        background-color: var(--mediumLight);
-        border-radius: 50%;
+        /* Darker green so white icons read clearly */
+        background-color: #1f4d35;
+        border-radius: 10%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -92,8 +95,8 @@
     #services-1176 .cs-icon {
         width: clamp(2rem, 4vw, 2.5rem);
         height: auto;
-        /* Filter only applies to the image, not the background */
-        filter: brightness(0.4) grayscale(.7);
+        /* Force icons white on green cards */
+        filter: brightness(0) invert(1);
         display: block;
     }
     #services-1176 .cs-h3 {
@@ -102,7 +105,7 @@
         line-height: 1.2em;
         font-weight: bold;
         margin: 0 0 0.75rem;
-        color: var(--headerColor);
+        color: #fff;
         transition: color 0.3s;
         text-align: inherit;
     }
@@ -114,14 +117,14 @@
         margin: 0;
         margin-bottom: 1.25rem;
         padding: 0;
-        color: var(--bodyTextColor);
+        color: rgba(255, 255, 255, 0.9);
     }
     #services-1176 .cs-link {
         font-size: 1rem;
         line-height: 1.2em;
         font-weight: 700;
         margin-top: auto;
-        color: var(--headerColor);
+        color: #fff;
         text-decoration: none;
         display: flex;
         justify-content: flex-start;
@@ -136,7 +139,7 @@
         width: 1.25rem;
         height: auto;
         display: block;
-        filter: grayscale(1) brightness(0);
+        filter: brightness(0) invert(1);
         transition:
             filter 0.3s,
             transform 0.3s;
@@ -154,27 +157,28 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode #services-1176 .cs-item {
-        background-color: var(--medium);
-        border-color: rgba(255, 255, 255, 0.2);
+        background-color: var(--primary);
     }
-    body.dark-mode #services-1176 .cs-item:hover .cs-h3 {
-        color: var(--primary);
+    body.dark-mode #services-1176 .cs-item:hover {
+        background-color: var(--primaryLight);
     }
     body.dark-mode #services-1176 .cs-topper {
         color: var(--primaryLight);
     }
     body.dark-mode #services-1176 .cs-title,
-    body.dark-mode #services-1176 .cs-text,
-    body.dark-mode #services-1176 .cs-h3,
-    body.dark-mode #services-1176 .cs-item-text,
-    body.dark-mode #services-1176 .cs-link {
+    body.dark-mode #services-1176 .cs-text {
         color: var(--bodyTextColorWhite);
     }
     body.dark-mode #services-1176 .cs-text {
         opacity: 0.8;
     }
+    body.dark-mode #services-1176 .cs-h3,
+    body.dark-mode #services-1176 .cs-item-text,
+    body.dark-mode #services-1176 .cs-link {
+        color: #fff;
+    }
     body.dark-mode #services-1176 .cs-arrow {
-        filter: grayscale(1) brightness(1000%);
+        filter: brightness(0) invert(1);
     }
 }
 
