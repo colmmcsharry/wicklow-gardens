@@ -7,7 +7,7 @@ permalink: "/landscaping/"
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/contact-banner-hero.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
     <link rel="stylesheet" href="/assets/css/individual-service.css">
 {% endblock %}
 
@@ -23,16 +23,16 @@ permalink: "/landscaping/"
             </div>
         </div>
         <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="landscaping services" width="1920" height="482" loading="eager" decoding="async">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/contact-banner-hero.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/contact-banner-hero.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/contact-banner-hero.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/contact-banner-hero.jpg" | resize({ width: 1024, height: 420 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/contact-banner-hero.jpg" | resize({ width: 1024, height: 420 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/contact-banner-hero.jpg" | resize({ width: 1024, height: 420 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/contact-banner-hero.jpg" | resize({ width: 1024, height: 420 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/contact-banner-hero.jpg" | resize({ width: 1024, height: 420 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/contact-banner-hero.jpg" | resize({ width: 1024, height: 420 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/contact-banner-hero.jpg" | resize({ width: 1024, height: 420 }) | jpeg %}" alt="landscaping services" width="1024" height="420" loading="eager" decoding="async">
         </picture>
     </div>
 
