@@ -477,7 +477,7 @@
 
 		.cs-logo {
 			width: auto;
-			max-width: calc(96 / 16 * 1rem);
+			max-width: calc(120 / 16 * 1rem);
 			height: auto;
 			margin: 0 auto 0 0;
 			border-radius: 0;
@@ -1039,7 +1039,7 @@
 		.cs-logo {
 			border-radius: 0;
 			width: auto;
-			max-width: calc(120 / 16 * 1rem);
+			max-width: calc(152 / 16 * 1rem);
 			height: auto;
 			/* margin-right auto pushes everything away from it to the right */
 			margin: 0 auto 0 0;
@@ -1365,11 +1365,14 @@
 		}
 
 		.cs-logo {
-			border-radius: 0;
 			/* stacked logo - keep readable without dominating footer */
-			width: clamp(9rem, 20vw, 11rem);
+			width: clamp(10rem, 22vw, 13rem);
 			height: auto;
 			display: block;
+			background: #fff;
+			border-radius: calc(6 / 16 * 1rem);
+			padding: calc(6 / 16 * 1rem);
+			box-sizing: border-box;
 			/* 28px - 44px */
 			margin-bottom: clamp(1.75rem, 4.17vw, 2.75rem);
 		}
@@ -1380,6 +1383,7 @@
 			height: auto;
 			background: transparent;
 			padding: 0;
+			display: block;
 
 			&.dark {
 				display: none;
