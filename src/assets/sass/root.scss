@@ -480,10 +480,11 @@
 			max-width: calc(120 / 16 * 1rem);
 			height: auto;
 			margin: 0 auto 0 0;
-			border-radius: 0;
+			background: #fff;
+			border-radius: calc(6 / 16 * 1rem);
 			/* prevents padding and border from affecting height and width */
 			box-sizing: border-box;
-			padding: 0;
+			padding: calc(6 / 16 * 1rem);
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
@@ -500,6 +501,7 @@
 				border-radius: 0;
 				object-fit: contain;
 				object-position: left center;
+				display: block;
 			}
 		}
 
@@ -1037,13 +1039,15 @@
 		}
 
 		.cs-logo {
-			border-radius: 0;
 			width: auto;
 			max-width: calc(152 / 16 * 1rem);
 			height: auto;
 			/* margin-right auto pushes everything away from it to the right */
 			margin: 0 auto 0 0;
-			padding: calc(8 / 16 * 1rem) 0;
+			background: #fff;
+			border-radius: calc(6 / 16 * 1rem);
+			padding: calc(6 / 16 * 1rem);
+			box-sizing: border-box;
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
@@ -1060,6 +1064,7 @@
 				border-radius: 0;
 				/* ensures the image never overflows the container. It stays contained within it's width and height and expands to fill it then stops once it reaches an edge */
 				object-fit: contain;
+				display: block;
 			}
 		}
 
