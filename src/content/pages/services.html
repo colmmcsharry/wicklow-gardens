@@ -94,10 +94,10 @@ permalink: "/services/"
             </div>
 
             <div class="cs-work-extra">
-                <picture class="cs-image cs-image-natural">
-                    <source srcset="{% getUrl "/assets/images/services/service-before-after.jpg" | resize({ width: 900, height: 1120 }) | avif %}" type="image/avif">
-                    <source srcset="{% getUrl "/assets/images/services/service-before-after.jpg" | resize({ width: 900, height: 1120 }) | webp %}" type="image/webp">
-                    <img src="{% getUrl "/assets/images/services/service-before-after.jpg" | resize({ width: 900, height: 1120 }) | jpeg %}" alt="Before and after lawn transformation" width="450" height="560" loading="lazy" decoding="async">
+                <picture class="cs-image cs-image-natural cs-image-before-after">
+                    <source srcset="{% getUrl "/assets/images/services/service-before-after.jpg" | resize({ width: 900, height: 1120, position: "centre" }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/services/service-before-after.jpg" | resize({ width: 900, height: 1120, position: "centre" }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/services/service-before-after.jpg" | resize({ width: 900, height: 1120, position: "centre" }) | jpeg %}" alt="Before and after lawn transformation" width="450" height="560" loading="lazy" decoding="async">
                 </picture>
                 <picture class="cs-image cs-image-natural">
                     <source srcset="{% getUrl "/assets/images/services/service-garden-2.jpg" | resize({ width: 900, height: 1120 }) | avif %}" type="image/avif">
