@@ -1,13 +1,13 @@
 ---
 title: "Services | Wicklow Gardening and Landscaping"
-description: "Professional gardening and landscaping services across Dublin, Wicklow, Kildare, and Louth. Lawn care, planting, maintenance, and more."
+description: "Top quality gardening and landscaping services across Dublin, Wicklow, Kildare, and Louth. Professional outdoor care from a local team you can trust."
 permalink: "/services/"
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/services/service-9.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
     <link rel="stylesheet" href="/assets/css/services.css">
 {% endblock %}
 
@@ -22,173 +22,98 @@ permalink: "/services/"
             </div>
         </div>
         <picture class="cs-background">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
-            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
-            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
-            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/wide-garden.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="gardening services" width="1920" height="482" loading="eager" decoding="async">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services/service-9.jpg" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services/service-9.jpg" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services/service-9.jpg" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/services/service-9.jpg" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/services/service-9.jpg" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/services/service-9.jpg" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/services/service-9.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/services/service-9.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/services/service-9.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/services/service-9.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="Landscaped garden and lawn" width="1920" height="482" loading="eager" decoding="async">
         </picture>
     </div>
 
     <section id="services-1479">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Our Services</span>
-                <h2 class="cs-title">Professional Landscaping & Gardening Services</h2>
+                <span class="cs-topper">What We Offer</span>
+                <h2 class="cs-title">Top Quality Gardening &amp; Landscaping</h2>
                 <p class="cs-text">
-                    From regular maintenance to full garden transformations, we offer a practical range of gardening and landscaping services across Dublin, Wicklow, Kildare, and Louth.
+                    Wicklow Gardening and Landscaping delivers professional outdoor care across Dublin, Wicklow, Kildare, and Louth. Whether you need regular garden maintenance or a full landscaping project, we focus on clean workmanship, reliable service, and results that suit Irish homes and weather.
                 </p>
-                <br>
                 <p class="cs-text">
-                    Click a service below to learn more.
+                    From lawn care and planting to hedge work, garden clearance, and complete outdoor makeovers, every job is handled with the same attention to detail. We turn up when we say we will, leave sites tidy, and make sure your outdoor space looks its best.
                 </p>
+                <p class="cs-text">
+                    Get in touch for a free quote — we are happy to talk through what you need and recommend the right approach for your garden.
+                </p>
+                <a href="/contact/" class="cs-button-solid" style="margin-top: 1.5rem;">Get a Free Quote</a>
             </div>
         </div>
     </section>
 
-<section id="services-1304">
-    <div class="cs-container">
-        <ul class="cs-card-group">
-            <li class="cs-item">
-                <a href="/landscaping/" class="cs-link">
-                    <div class="cs-icon-wrapper">
-                        <img class="cs-icon othergreen" src="/assets/images/landscape.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
-                    </div>
-                    <h3 class="cs-h3">Landscaping</h3>
-                    <p class="cs-item-text">
-                        Complete garden design and transformation — beds, lawns, features, and outdoor spaces tailored to your home.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="/garden-maintenance/" class="cs-link">
-                    <div class="cs-icon-wrapper">
-                        <img class="cs-icon othergreen" src="/assets/images/gardening-icon.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
-                    </div>
-                    <h3 class="cs-h3">Garden Maintenance</h3>
-                    <p class="cs-item-text">
-                        Regular or one-off visits for weeding, pruning, tidying, and seasonal care that keeps gardens looking their best.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="/lawn-care/" class="cs-link">
-                    <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/forest.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
-                    </div>
-                    <h3 class="cs-h3">Lawn Care</h3>
-                    <p class="cs-item-text">
-                        Mowing, feeding, moss control, and scarifying for healthier, greener lawns throughout the year.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="/hedge-trimming/" class="cs-link">
-                    <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/gardening.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
-                    </div>
-                    <h3 class="cs-h3">Hedge Trimming</h3>
-                    <p class="cs-item-text">
-                        Neat hedge cutting and shaping with cuttings cleared away — tidy boundaries and healthier growth.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="/planting/" class="cs-link">
-                    <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/gardening-icon.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
-                    </div>
-                    <h3 class="cs-h3">Planting & Borders</h3>
-                    <p class="cs-item-text">
-                        Beds and borders designed for Irish conditions — colour, structure, and planting that lasts.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="/turf-laying/" class="cs-link">
-                    <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/landscape.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
-                    </div>
-                    <h3 class="cs-h3">Turf Laying</h3>
-                    <p class="cs-item-text">
-                        Supply and lay quality turf for an instant green lawn, with proper ground prep and aftercare advice.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="/garden-clearance/" class="cs-link">
-                    <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/wheelbarrow.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
-                    </div>
-                    <h3 class="cs-h3">Garden Clearance</h3>
-                    <p class="cs-item-text">
-                        Clear overgrown gardens and debris so you have a clean slate for planting or landscaping.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="/patios/" class="cs-link">
-                    <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/patio.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
-                    </div>
-                    <h3 class="cs-h3">Patios</h3>
-                    <p class="cs-item-text">
-                        Outdoor living spaces designed to complement your home — practical, durable, and built for Irish weather.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="/pergolas/" class="cs-link">
-                    <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/pergola.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
-                    </div>
-                    <h3 class="cs-h3">Pergolas</h3>
-                    <p class="cs-item-text">
-                        Custom pergolas for shade and structure — a simple way to upgrade outdoor seating areas.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="/fencing/" class="cs-link">
-                    <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/fence.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
-                    </div>
-                    <h3 class="cs-h3">Fencing</h3>
-                    <p class="cs-item-text">
-                        Privacy and boundary fencing installed with quality materials and a clean professional finish.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="/garden-walls-service/" class="cs-link">
-                    <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/brick.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
-                    </div>
-                    <h3 class="cs-h3">Garden Walls</h3>
-                    <p class="cs-item-text">
-                        Garden walls and pillars for structure, raised beds, and defined outdoor spaces.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="/contact/" class="cs-link">
-                    <div class="cs-icon-wrapper">
-                        <img class="cs-icon" src="/assets/images/miscellaneous.png" loading="lazy" decoding="async" alt="" width="40" height="40" aria-hidden="true">
-                    </div>
-                    <h3 class="cs-h3">Something Else?</h3>
-                    <p class="cs-item-text">
-                        Need a different garden job? Get in touch and we will help where we can.
-                    </p>
-                </a>
-            </li>
-        </ul>
-    </div>
-</section>
+    <section id="services-work">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Quality Guaranteed</span>
+                <h2 class="cs-title">Gardening &amp; Landscaping Done Properly</h2>
+            </div>
+            <div class="cs-work-grid">
+                <picture class="cs-image">
+                    <source srcset="{% getUrl "/assets/images/services/service-9.jpg" | resize({ width: 900, height: 1120 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/services/service-9.jpg" | resize({ width: 900, height: 1120 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/services/service-9.jpg" | resize({ width: 900, height: 1120 }) | jpeg %}" alt="Fresh lawn and flower borders" width="450" height="560" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-image">
+                    <source srcset="{% getUrl "/assets/images/services/service-3.jpg" | resize({ width: 900, height: 1120 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/services/service-3.jpg" | resize({ width: 900, height: 1120 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/services/service-3.jpg" | resize({ width: 900, height: 1120 }) | jpeg %}" alt="Neat hedges and garden pathway" width="450" height="560" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-image">
+                    <source srcset="{% getUrl "/assets/images/services/service-1.jpg" | resize({ width: 900, height: 1120 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/services/service-1.jpg" | resize({ width: 900, height: 1120 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/services/service-1.jpg" | resize({ width: 900, height: 1120 }) | jpeg %}" alt="Manicured green lawn" width="450" height="560" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-image">
+                    <source srcset="{% getUrl "/assets/images/services/service-5.jpg" | resize({ width: 900, height: 1120 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/services/service-5.jpg" | resize({ width: 900, height: 1120 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/services/service-5.jpg" | resize({ width: 900, height: 1120 }) | jpeg %}" alt="Raised planting bed with healthy plants" width="450" height="560" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-image">
+                    <source srcset="{% getUrl "/assets/images/services/service-10.jpg" | resize({ width: 900, height: 1120 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/services/service-10.jpg" | resize({ width: 900, height: 1120 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/services/service-10.jpg" | resize({ width: 900, height: 1120 }) | jpeg %}" alt="Hands planting in a garden border" width="450" height="560" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-image">
+                    <source srcset="{% getUrl "/assets/images/services/service-6.jpg" | resize({ width: 900, height: 1120 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/services/service-6.jpg" | resize({ width: 900, height: 1120 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/services/service-6.jpg" | resize({ width: 900, height: 1120 }) | jpeg %}" alt="Gardening with trowel and soil" width="450" height="560" loading="lazy" decoding="async">
+                </picture>
+            </div>
+
+            <div class="cs-work-extra">
+                <picture class="cs-image cs-image-natural">
+                    <source srcset="{% getUrl "/assets/images/services/service-before-after.jpg" | resize({ width: 900, height: 1120 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/services/service-before-after.jpg" | resize({ width: 900, height: 1120 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/services/service-before-after.jpg" | resize({ width: 900, height: 1120 }) | jpeg %}" alt="Before and after lawn transformation" width="450" height="560" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-image cs-image-natural">
+                    <source srcset="{% getUrl "/assets/images/services/service-garden-2.jpg" | resize({ width: 900, height: 1120 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/services/service-garden-2.jpg" | resize({ width: 900, height: 1120 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/services/service-garden-2.jpg" | resize({ width: 900, height: 1120 }) | jpeg %}" alt="Landscaped backyard with lawn and patio" width="450" height="560" loading="lazy" decoding="async">
+                </picture>
+                <picture class="cs-image cs-image-natural">
+                    <source srcset="{% getUrl "/assets/images/services/service-lawnmower.jpg" | resize({ width: 900, height: 1120 }) | avif %}" type="image/avif">
+                    <source srcset="{% getUrl "/assets/images/services/service-lawnmower.jpg" | resize({ width: 900, height: 1120 }) | webp %}" type="image/webp">
+                    <img src="{% getUrl "/assets/images/services/service-lawnmower.jpg" | resize({ width: 900, height: 1120 }) | jpeg %}" alt="Lawn mower on grass" width="450" height="560" loading="lazy" decoding="async">
+                </picture>
+            </div>
+        </div>
+    </section>
+
+    {# Individual service cards temporarily removed — restore from services-cards.backup.html #}
 
     {% include 'sections/cta.html' %}
 

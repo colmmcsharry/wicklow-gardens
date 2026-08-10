@@ -34,36 +34,19 @@
                             About
                         </a>
                     </li>
-                    <!-- Note: When copying this dropdown, update the id attribute with an appropriate name (e.g., "services-dropdown-toggle", "products-dropdown-toggle") and ensure the aria-labelledby attribute on the ul matches the button's id -->
-                    <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-                    <li class="cs-li cs-dropdown">
-                        <button class="cs-li-link cs-dropdown-toggle {% if '/driveways/' in page.url or '/garden-gallery/' in page.url or '/garden-walls/' in page.url or '/pergola-garden/' in page.url or '/before-after-garden/' in page.url or '/garden-overhaul/' in page.url %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="projects-dropdown-toggle">
-                            Gallery
-                            <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
-                        </button>
-                        <ul class="cs-drop-ul" aria-labelledby="projects-dropdown-toggle">
-                            <li class="cs-drop-li">
-                                <a href="/garden-gallery/" class="cs-li-link cs-drop-link">Garden Gallery</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="/before-after-garden/" class="cs-li-link cs-drop-link">Before & After</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="/garden-overhaul/" class="cs-li-link cs-drop-link">Garden Renovations</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="/pergola-garden/" class="cs-li-link cs-drop-link">Pergolas</a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="/garden-walls/" class="cs-li-link cs-drop-link">Garden Walls</a>
-                            </li>
-                        </ul>
-                    </li>
+                    <!-- Gallery dropdown removed — restore from gallery-dropdown.backup.html when ready -->
                     <!-- <li class="cs-li">
                         <a href="/blog/" class="cs-li-link {% if page.url == "/blog/" %} cs-active {% endif %}" {% if page.url == "/blog/" %} aria-current="page" {% endif %}>
                             Blog
                         </a>
                     </li> -->
+                    <!-- TEMP: single Services link. Restore dropdown from services-dropdown.backup.html when ready -->
+                    <li class="cs-li">
+                        <a href="/services/" class="cs-li-link {% if page.url == "/services/" %} cs-active {% endif %}" {% if page.url == "/services/" %} aria-current="page" {% endif %}>
+                            Services
+                        </a>
+                    </li>
+                    <!--
                     <li class="cs-li cs-dropdown">
                         <button class="cs-li-link cs-dropdown-toggle {% if '/services/' in page.url or '/landscaping/' in page.url or '/garden-maintenance/' in page.url or '/lawn-care/' in page.url or '/hedge-trimming/' in page.url or '/planting/' in page.url or '/garden-clearance/' in page.url or '/turf-laying/' in page.url or '/fencing/' in page.url or '/pergolas/' in page.url or '/patios/' in page.url or '/garden-walls-service/' in page.url %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="services-dropdown-toggle">
                             Services
@@ -108,6 +91,7 @@
                             </li>
                         </ul>
                     </li>
+                    -->
                     <!-- <li class="cs-li">
                         <a href="/reviews/" class="cs-li-link {% if page.url == "/reviews/" %} cs-active {% endif %}" {% if page.url == "/reviews/" %} aria-current="page" {% endif %}>
                             Reviews

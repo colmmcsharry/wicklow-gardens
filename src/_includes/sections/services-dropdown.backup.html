@@ -1,0 +1,48 @@
+<!--
+  BACKUP: Services dropdown nav (temporarily replaced by a single /services/ link).
+  To restore: replace the single Services <li> in header.html with this block.
+-->
+<li class="cs-li cs-dropdown">
+    <button class="cs-li-link cs-dropdown-toggle {% if '/services/' in page.url or '/landscaping/' in page.url or '/garden-maintenance/' in page.url or '/lawn-care/' in page.url or '/hedge-trimming/' in page.url or '/planting/' in page.url or '/garden-clearance/' in page.url or '/turf-laying/' in page.url or '/fencing/' in page.url or '/pergolas/' in page.url or '/patios/' in page.url or '/garden-walls-service/' in page.url %} cs-active {% endif %}" aria-haspopup="menu" aria-expanded="false" id="services-dropdown-toggle">
+        Services
+        <img class="cs-drop-icon" src="/assets/svgs/dropdown.svg" alt="" width="15" height="15" decoding="async" aria-hidden="true">
+    </button>
+    <ul class="cs-drop-ul" aria-labelledby="services-dropdown-toggle">
+        <li class="cs-drop-li">
+            <a href="/services/" class="cs-li-link cs-drop-link">All Services</a>
+        </li>
+        <li class="cs-drop-li">
+            <a href="/landscaping/" class="cs-li-link cs-drop-link">Landscaping</a>
+        </li>
+        <li class="cs-drop-li">
+            <a href="/garden-maintenance/" class="cs-li-link cs-drop-link">Garden Maintenance</a>
+        </li>
+        <li class="cs-drop-li">
+            <a href="/lawn-care/" class="cs-li-link cs-drop-link">Lawn Care</a>
+        </li>
+        <li class="cs-drop-li">
+            <a href="/hedge-trimming/" class="cs-li-link cs-drop-link">Hedge Trimming</a>
+        </li>
+        <li class="cs-drop-li">
+            <a href="/planting/" class="cs-li-link cs-drop-link">Planting & Borders</a>
+        </li>
+        <li class="cs-drop-li">
+            <a href="/turf-laying/" class="cs-li-link cs-drop-link">Turf Laying</a>
+        </li>
+        <li class="cs-drop-li">
+            <a href="/garden-clearance/" class="cs-li-link cs-drop-link">Garden Clearance</a>
+        </li>
+        <li class="cs-drop-li">
+            <a href="/patios/" class="cs-li-link cs-drop-link">Patios</a>
+        </li>
+        <li class="cs-drop-li">
+            <a href="/pergolas/" class="cs-li-link cs-drop-link">Pergolas</a>
+        </li>
+        <li class="cs-drop-li">
+            <a href="/fencing/" class="cs-li-link cs-drop-link">Fencing</a>
+        </li>
+        <li class="cs-drop-li">
+            <a href="/garden-walls-service/" class="cs-li-link cs-drop-link">Garden Walls</a>
+        </li>
+    </ul>
+</li>

@@ -39,6 +39,10 @@
 
         .cs-text {
             margin-bottom: 0;
+
+            & + .cs-text {
+                margin-top: 1rem;
+            }
         }
 
         .cs-services-grid {
@@ -52,6 +56,74 @@
             gap: clamp(2rem, 4vw, 3rem);
         }
     }
+
+    #services-work {
+        padding: var(--sectionPadding);
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: clamp(2rem, 4vw, 3rem);
+        }
+
+        .cs-content {
+            text-align: center;
+            width: 100%;
+            max-width: calc(700 / 16 * 1rem);
+        }
+
+        .cs-work-grid {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: clamp(0.75rem, 2vw, 1.25rem);
+        }
+
+        .cs-image {
+            width: 100%;
+            height: clamp(12rem, 40vw, 20rem);
+            display: block;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+        }
+
+        .cs-work-extra {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: clamp(0.75rem, 2vw, 1.25rem);
+            align-items: stretch;
+        }
+
+        .cs-image-natural {
+            /* Match each other; taller crop so the before/after still reads clearly */
+            height: clamp(14rem, 36vw, 26rem);
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                display: block;
+            }
+        }
+    }
 }
 
 /* Tablet - 768px */
@@ -59,6 +131,20 @@
     #services-1479 {
         .cs-services-grid {
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        }
+    }
+
+    #services-work {
+        .cs-work-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .cs-image {
+            height: clamp(16rem, 28vw, 22rem);
+        }
+
+        .cs-image-natural {
+            height: clamp(18rem, 30vw, 28rem);
         }
     }
 }
@@ -75,7 +161,8 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #services-1479 {
+        #services-1479,
+        #services-work {
             .cs-topper {
                 color: var(--primaryLight);
             }
