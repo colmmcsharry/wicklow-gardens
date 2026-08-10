@@ -204,9 +204,11 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
             </picture>
             <!--Picture 4-->
             <picture class="cs-image">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/garden-4.jpg" | resize({ width: 1152, height: 1040 }) | avif %}" type="image/avif">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/garden-4.jpg" | resize({ width: 1152, height: 1040 }) | webp %}" type="image/webp">
-                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/portfolio/garden-4.jpg" | resize({ width: 1152, height: 1040 }) | jpeg %}" type="image/jpeg">
+                <!-- Mobile: lawnmower (before/after is hard to read at small sizes) -->
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services/service-lawnmower.jpg" | resize({ width: 1152, height: 1040 }) | avif %}" type="image/avif">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services/service-lawnmower.jpg" | resize({ width: 1152, height: 1040 }) | webp %}" type="image/webp">
+                <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/services/service-lawnmower.jpg" | resize({ width: 1152, height: 1040 }) | jpeg %}" type="image/jpeg">
+                <!-- Tablet / desktop: before & after -->
                 <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/garden-4.jpg" | resize({ width: 1216, height: 1280 }) | avif %}" type="image/avif">
                 <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/garden-4.jpg" | resize({ width: 1216, height: 1280 }) | webp %}" type="image/webp">
                 <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/portfolio/garden-4.jpg" | resize({ width: 1216, height: 1280 }) | jpeg %}" type="image/jpeg">

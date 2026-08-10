@@ -105,14 +105,15 @@
             margin: 0;
             padding: 0;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1fr;
             gap: clamp(0.75rem, 2vw, 1.25rem);
             align-items: stretch;
         }
 
-        .cs-image-natural {
-            /* Match each other; taller crop so the before/after still reads clearly */
-            height: clamp(14rem, 36vw, 26rem);
+        .cs-image.cs-image-natural {
+            /* Tall portrait row — overrides square .cs-image height at every breakpoint */
+            height: auto;
+            aspect-ratio: 450 / 560;
             overflow: hidden;
 
             img {
@@ -143,8 +144,9 @@
             height: clamp(16rem, 28vw, 22rem);
         }
 
-        .cs-image-natural {
-            height: clamp(18rem, 30vw, 28rem);
+        .cs-image.cs-image-natural {
+            height: auto;
+            aspect-ratio: 450 / 560;
         }
     }
 }
@@ -154,6 +156,17 @@
     #services-1479 {
         .cs-services-grid {
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        }
+    }
+
+    #services-work {
+        .cs-work-extra {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .cs-image.cs-image-natural {
+            height: auto;
+            aspect-ratio: 450 / 560;
         }
     }
 }
