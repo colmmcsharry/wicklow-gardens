@@ -231,7 +231,7 @@
                 display: block;
                 height: 100%;
                 width: 100%;
-                background: linear-gradient(180deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.85) 100%);
+                background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.75) 100%);
                 top: 0;
                 left: 0;
                 z-index: 1;
@@ -357,15 +357,6 @@
                         /* lighten up the color of the text by 40%*/
                         filter: brightness(1.4);
                     }
-                }
-            }
-
-            .cs-bg-picture {
-                background-color: #000;
-
-                img {
-                    /* lets parent background-color bleed through and darken it */
-                    opacity: 0.5;
                 }
             }
         }
