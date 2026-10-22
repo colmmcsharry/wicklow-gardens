@@ -42,7 +42,10 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <p class="cs-text">
             Experienced garden and landscaping team in Wicklow and surrounding areas. We offer a  range of services to help you create the perfect outdoor space for your home.
         </p>
-        <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid"><span class="cs-button-phone"><img src="/assets/images/phone-call-white-icon.png" alt="" width="16" height="16" aria-hidden="true">{{ client.phoneFormatted }}</span></a>
+        <div class="cs-hero-ctas">
+            <a href="tel:{{ client.phoneForTel }}" class="cs-button-solid"><span class="cs-button-phone"><img src="/assets/svgs/mobile-phone-white.svg" alt="" width="16" height="16" aria-hidden="true">{{ client.phoneFormatted }}</span></a>
+            <a href="tel:{{ client.landlineForTel }}" class="cs-button-solid"><span class="cs-button-phone"><img src="/assets/images/phone-call-white-icon.png" alt="" width="16" height="16" aria-hidden="true">{{ client.landlineFormatted }}</span></a>
+        </div>
     </div>
 
     <!-- Background Image -->

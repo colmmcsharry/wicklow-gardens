@@ -143,6 +143,22 @@
             color: #fff;
         }
 
+        .cs-hero-ctas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: calc(12 / 16 * 1rem);
+
+            .cs-button-solid {
+                /* Equal width for mobile + landline CTAs */
+                width: calc(240 / 16 * 1rem);
+                min-width: calc(240 / 16 * 1rem);
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
         .cs-button-solid {
             font-size: calc(16 / 16 * 1rem);
             font-weight: 700;
@@ -151,7 +167,7 @@
             text-decoration: none;
             text-align: center;
             min-width: calc(150 / 16 * 1rem);
-            margin: auto;
+            margin: 0;
             padding: 0 calc(24 / 16 * 1rem);
             color: #ffffff;
             background-color: var(--primary);

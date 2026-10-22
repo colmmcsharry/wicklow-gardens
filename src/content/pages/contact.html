@@ -88,10 +88,15 @@ permalink: "/contact/"
                 <span class="cs-header">Email</span>
                 <a class="cs-link" href="mailto:{{ client.email }}">{{ client.email }}</a>
                 <!--Phone-->
-                <span class="cs-header">Phone</span>
+                <span class="cs-header">Mobile</span>
                 <a class="cs-link cs-phone-contact" href="tel:{{ client.phoneForTel }}">
-                    <img src="/assets/images/phone-call-white-icon.png" alt="" width="18" height="18" style="vertical-align: middle; margin-right: 8px;" aria-hidden="true">
+                    <img src="/assets/svgs/mobile-phone-white.svg" alt="" width="18" height="18" style="vertical-align: middle; margin-right: 8px;" aria-hidden="true">
                     {{ client.phoneFormatted }}
+                </a>
+                <span class="cs-header">Landline</span>
+                <a class="cs-link cs-phone-contact" href="tel:{{ client.landlineForTel }}">
+                    <img src="/assets/images/phone-call-white-icon.png" alt="" width="18" height="18" style="vertical-align: middle; margin-right: 8px;" aria-hidden="true">
+                    {{ client.landlineFormatted }}
                 </a>
                 <!--Address-->
                 <!-- <span class="cs-header">Address</span>
