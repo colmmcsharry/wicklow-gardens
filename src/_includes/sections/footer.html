@@ -60,14 +60,8 @@
             </li>
             <li class="cs-contact-li">
                 <p class="cs-contact-link cs-address">
-                    Based in Wicklow, serving Dublin, Wicklow, Kildare, and Louth.
+                    {{ client.address.lineOne }}
                 </p>
-                <!-- <a class="cs-contact-link cs-address" href="{{ client.address.mapLink }}" target="_blank" rel="noopener">
-                    {{ client.address.lineOne }}, <br>
-                    {{ client.address.lineTwo }}, <br>
-                    {{ client.address.city }}, {{ client.address.state }}
-                    {{ client.address.zip }}
-                </a> -->
             </li>
             <li class="cs-contact-li">
                 <a class="cs-contact-link cs-phone" href="tel:{{ client.phoneForTel }}">
